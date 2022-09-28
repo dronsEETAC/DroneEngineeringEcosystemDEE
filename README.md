@@ -9,7 +9,7 @@ It allows  to establish flight plans, record flight data and manage the informat
 The ecosystem contains several modules, that are briefly described in the following.
 
 * *Dashboard*:
-[![DEE Badge](https://img.shields.io/badge/DEE-dashboard-brightgreen.svg)](https://github.com/dronsEETAC/DashboardDEE) a desktop application that allows the global control of the system. From the dashboard, 
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-dashboard-brightgreen.svg)](https://github.com/dronsEETAC/DashboardDEE) a desktop application that allows the global control of the system. From the dashboard, 
 the user can select the drone platform, control de drone operation and manage the data involved in the mission.
    
 * *Mobile app*: an app for smartphones that implements a subset of the functionalities of the dashboard. 
