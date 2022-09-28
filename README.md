@@ -13,7 +13,7 @@ The ecosystem contains several modules, that are briefly described in the follow
 the user can select the drone platform, control de drone operation and manage the data involved in the mission.
    
 * *Mobile app*:
-* [![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-mobileapp-brightgreen.svg)](https://github.com/dronsEETAC/MobileAppDEE) an app for smartphones that implements a subset of the functionalities of the dashboard. 
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-mobileapp-brightgreen.svg)](https://github.com/dronsEETAC/DroneMobileAppDEE) an app for smartphones that implements a subset of the functionalities of the dashboard. 
  
 * *Autopilot service*: an on-board module that controls the autopilot to execute the commands coming from the Dashboard
 or the Mobile app (arm, takeoff, go to position, etc.) 
