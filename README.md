@@ -35,7 +35,7 @@ of the status of the drone platform, as required by other modules.
 * *Global broker*: middleware that connects the gate with the external modules through publications and subscription.    
 
 * *API REST*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-apirest-brightgreen.svg)](https://github.com/dronsEETAC/APIRESTDEE) a server that provides data storage and retrieval through HTTP basic operations (GET, POST, PUT, DELETE).      
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-apirest-brightgreen.svg)](https://github.com/dronsEETAC/RESTAPIDEE) a server that provides data storage and retrieval through HTTP basic operations (GET, POST, PUT, DELETE).      
 
 * *Data service*:
 [![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-dataservice-brightgreen.svg)](https://github.com/dronsEETAC/DataServiceDEE) provides the required by the rest of modules interface to access data in the API REST
