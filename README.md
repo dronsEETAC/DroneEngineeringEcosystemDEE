@@ -15,24 +15,30 @@ the user can select the drone platform, control de drone operation and manage th
 * *Mobile app*:
 [![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-mobileapp-brightgreen.svg)](https://github.com/dronsEETAC/DroneMobileAppDEE) an app for smartphones that implements a subset of the functionalities of the dashboard. 
  
-* *Autopilot service*: an on-board module that controls the autopilot to execute the commands coming from the Dashboard
+* *Autopilot service*:
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-autopilot-brightgreen.svg)](https://github.com/dronsEETAC/DroneAutopilotDEE) an on-board module that controls the autopilot to execute the commands coming from the Dashboard
 or the Mobile app (arm, takeoff, go to position, etc.) 
 
-* *Camera service*: an on-board module that controls the on-board camera to execute the commands coming from
+* *Camera service*:
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-cameracontroller-brightgreen.svg)](https://github.com/dronsEETAC/CameraControllerDEE) an on-board module that controls the on-board camera to execute the commands coming from
 the Dashboard or the Mobile app (take a picture, get the video stream, etc.)   
    
-* *LEDs service*: an on-board module that controls the LEDs of the drone platform to inform
+* *LEDs service*:
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-ledscontroller-brightgreen.svg)](https://github.com/dronsEETAC/LEDsControllerDEE) an on-board module that controls the LEDs of the drone platform to inform
 of the status of the drone platform, as required by other modules.    
   
-* *gate*: connects the on-board modules with the external modules.    
+* *gate*:
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-gate-brightgreen.svg)](https://github.com/dronsEETAC/GateDEE) connects the on-board modules with the external modules.    
 
 * *Local broker*: on-board middleware that connects the on-board modules through publications and subscription.   
 
 * *Global broker*: middleware that connects the gate with the external modules through publications and subscription.    
 
-* *API REST*: a server that provides data storage and retrieval through HTTP basic operations (GET, POST, PUT, DELETE).      
+* *API REST*:
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-apirest-brightgreen.svg)](https://github.com/dronsEETAC/APIRESTDEE) a server that provides data storage and retrieval through HTTP basic operations (GET, POST, PUT, DELETE).      
 
-* *Data service*: provides the required by the rest of modules interface to access data in the API REST
+* *Data service*:
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-dataservice-brightgreen.svg)](https://github.com/dronsEETAC/DataServiceDEE) provides the required by the rest of modules interface to access data in the API REST
 via publications and subscriptions. 
 
 The Mission Planner module that appears in the figure does not belong to the Ecosystem,
