@@ -52,6 +52,8 @@ Now imagine that the user does not want to receive all the photos, but only thos
 
 ## 3. The drone platform
 The drone platform can be seen in the figure. It uses a HexSoon kit for the frame and motors, an Orange Cube Pixhawk as flight controller and a Raspberry Pi as on board computer (the red box). The platform includes also a camera, a servo, a button and a collection of LEDs.   
+
+![Drone_platform](https://github.com/dronsEETAC/DroneEngineeringEcosystemDEE/issues/2#issue-1513668820)
     
 A detailed guide on how to assemble, configure and tune up the drone platform can be found here.
 
