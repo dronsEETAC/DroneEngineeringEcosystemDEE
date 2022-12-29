@@ -56,7 +56,8 @@ The drone platform can be seen in the figure. It uses a HexSoon kit for the fram
 ![dron](https://user-images.githubusercontent.com/100842082/209948305-c1f2e4dc-2606-4259-bf78-930cb6b44510.jpg)
 
     
-A detailed guide on how to assemble, configure and tune up the drone platform can be found here.
+A detailed guide on how to assemble, configure and tune up the drone platform can be found here:
+[TransversalProjectGuide.pdf](https://github.com/dronsEETAC/DroneEngineeringEcosystemDEE/files/10319359/TransversalProjectGuide.pdf)
 
  
 ## Demo   
