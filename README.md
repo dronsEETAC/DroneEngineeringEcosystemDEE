@@ -1,7 +1,7 @@
 # Drone Engineering Ecosystem   
 ![DEE_software_architecture](https://user-images.githubusercontent.com/100842082/209946685-f3dc19d6-f781-4703-a0da-52a5e6a85fe6.png)
 
-## General description
+## 1. General description
 
 The Drone Engineering Ecosystem is a software tool that allows controlling the operation a drone platform in different ways and using different types of devices and applications. Look at the figure to see the software architecture and the technologies and tools involved.   
 
@@ -44,11 +44,16 @@ In addition to these modules, the ecosystem uses:
 2. An external broker (Mosquitto) running in internet to facilitate the communication between front-end and back-end modules and the drone platform.
 3. The Mission Planner, that is used for development purposes, since it provides an autopilot simulator, so that the ecosystem can be developed and tested without requiring a real drone platform. 
    
-## A case example
+## 2. A case example
 The best way to understand how the Drone Engineering Ecosystem works is through an example.
-Let's imagine a user who wants the drone to scan a certain surface and take photos at certain points. Using the Dashboard the user can prepare the mission by indicating the waypoints to visit and the points where a photo should be taken. From the Dashboard it will send the flight plant to the Autopilot service instructions to the Camera service on when to take the photos. Then, already at the site where the mission must be carried out, the user can use the mobile application to give the order to start the flight plan. From this application the user can also make decisions in an emergency (stop, land, return home, etc.). In addition, on the mobile phone the user can see the photos that the drone is taking. Those photos are also sent to the data service which stores them in the database for further analysis.
+Let's imagine a user who wants the drone to scan a certain surface and take photos at certain points. Using the Dashboard the user can prepare the mission by indicating the waypoints to visit and the points where a photo should be taken. From the Dashboard it will send the flight plant to the Autopilot service instructions to the Camera service on when to take the photos. Then, already at the site where the mission must be carried out, the user can use the mobile application to give the order to start the flight plan. From this application the user can also make decisions in an emergency (stop, land, return home, etc.). In addition, on the mobile phone the user can see the photos that the drone is taking. Those photos are also sent to the data service which stores them in the database for further analysis.   
+    
 Now imagine that the user does not want to receive all the photos, but only those in which a certain object appears (for example, a car). Also, the user wants the selected photos to be stored on-board and download and process them once the drone has landed. These additional functionalities may require the development of additional modules, such as an image processing service and a data storage and retrieval service, both on board.
 
+## 3. The drone platform
+The drone platform can be seen in the figure. It uses a HexSoon kit for the frame and motors, an Orange Cube Pixhawk as flight controller and a Raspberry Pi as on board computer (the red box). The platform includes also a camera, a servo, a button and a collection of LEDs.   
+    
+A detailed guide on how to assemble, configure and tune up the drone platform can be found here.
 
  
 ## Demo   
