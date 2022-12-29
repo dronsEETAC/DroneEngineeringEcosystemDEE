@@ -59,6 +59,16 @@ The drone platform can be seen in the figure. It uses a HexSoon kit for the fram
 A detailed guide on how to assemble, configure and tune up the drone platform can be found here:
 [TransversalProjectGuide.pdf](https://github.com/dronsEETAC/DroneEngineeringEcosystemDEE/files/10319359/TransversalProjectGuide.pdf)
 
+
+## 4. Communication mode
+In relation to communication system, the Drone Engineering Ecosystem can work in two modes, which are shown in the figure.
+
+In global mode it is assumed that the drone platform, the front-end and back-end modules are all connected to the internet and communicate through an external broker. Any public access broker can be used as external broker, or the  private broker that runs on a server at the Campus facilities (which requires access credentials).   
+
+When there is no internet coverage, then local mode should be used. In this case, the front-end module (for example, the Dashboard) must connect to the WIFI access point provided by the on-board computer. In this case, the external broker is also executed on-board. Naturally, in local mode it is not possible to use the back-end services that are only operational when there is an internet connection.   
+
+More details on the brokers required to support the communication in the Drone Engineering Ecosystem can be found in section X.
+
  
 ## Demo   
 [Drone Engineering Ecosystem demo](https://www.youtube.com/playlist?list=PL64O0POFYjHpXyP-T063RdKRJXuhqgaXY)    
