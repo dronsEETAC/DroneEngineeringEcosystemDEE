@@ -62,6 +62,8 @@ A detailed guide on how to assemble, configure and tune up the drone platform ca
 
 ## 4. Communication mode
 In relation to communication system, the Drone Engineering Ecosystem can work in two modes, which are shown in the figure.
+![connection_mode](https://user-images.githubusercontent.com/100842082/209949189-64d50d9f-3a40-4bf1-9812-2ad213adcc6e.png)
+
 
 In global mode it is assumed that the drone platform, the front-end and back-end modules are all connected to the internet and communicate through an external broker. Any public access broker can be used as external broker, or the  private broker that runs on a server at the Campus facilities (which requires access credentials).   
 
