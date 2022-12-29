@@ -61,15 +61,65 @@ A detailed guide on how to assemble, configure and tune up the drone platform ca
 
 
 ## 4. Communication mode
-In relation to communication system, the Drone Engineering Ecosystem can work in two modes, which are shown in the figure.
+In relation to communication system, the Drone Engineering Ecosystem can work in two modes, which are shown in the figure.    
+
 ![connection_mode](https://user-images.githubusercontent.com/100842082/209949189-64d50d9f-3a40-4bf1-9812-2ad213adcc6e.png)
 
 
-In global mode it is assumed that the drone platform, the front-end and back-end modules are all connected to the internet and communicate through an external broker. Any public access broker can be used as external broker, or the  private broker that runs on a server at the Campus facilities (which requires access credentials).   
+In global mode (in the left) it is assumed that the drone platform, the front-end and back-end modules are all connected to the internet and communicate through an external broker. Any public access broker can be used as external broker, or the  private broker that runs on a server at the Campus facilities (which requires access credentials).   
 
-When there is no internet coverage, then local mode should be used. In this case, the front-end module (for example, the Dashboard) must connect to the WIFI access point provided by the on-board computer. In this case, the external broker is also executed on-board. Naturally, in local mode it is not possible to use the back-end services that are only operational when there is an internet connection.   
+When there is no internet coverage, then local mode should be used (see in the right). In this case, the front-end module (for example, the Dashboard) must connect to the WIFI access point provided by the on-board computer. In this case, the external broker is also executed on-board. Naturally, in local mode it is not possible to use the back-end services that are only operational when there is an internet connection.   
 
 More details on the brokers required to support the communication in the Drone Engineering Ecosystem can be found in section X.
+
+## Operation mode
+The system can be run in production mode and in simulation mode. The production mode corresponds to the actual execution of the missions. Naturally, in that case the on-board services must be run on the on-board computer. Section X provides some important details on how to start the on-board services.   
+    
+In simulation mode all modules (including brokers) run on the same computer (for example, a laptop). In this case, Mission Planner is needed, which incorporates a simulator that will be controlled by the Autopilot service exactly as it would be in production mode.
+
+## Tools required
+You will requiere quite a few tolos in order to contribute to the Drone Engineering Ecosystem.   
+
+### Git and GitHub
+We use Git and GitHub to have the software available to everybody in the cloud, to manage different versions of the software and to organize the integration of the contributions of different participants in the project. So create your owno account in GitHub and install Git in your computer.
+
+### Mosquitto
+You will need to install mosquitto brokers both in your laptop (Windows) and in the on-board computer (Linux). You can find here details on how to install Mosquitto both in Windows and Linux.   
+   
+The key question is that you need to run the mosquitto broker with two different listeners. To that purpose use this in the configuration file:
+```
+listener 1884
+allow_anonymous true
+listener 8000
+protocol websockets
+allow_anonymous true
+```
+
+As can be seen in figure above (communication modes), the broker listening at port 1884 will be used always as the internal broker (either in global, local,  simulation and production modes).   
+
+The broker listening at port 8000 with websockets protocol will be used as external broker in simulation mode and also in production mode with local communication system.   
+
+In global mode we can use any public access broker as external broker using the websocket protocol. You can find here more information about public Access brokers. We recommend you to use ‘broker.hivemq.com:8000’.   
+
+You can also use the broker running at classpip.upc.edu:8000 in a server in the Campus services. In this case, you need the credentials for authentification.
+Communication via Mosquitto brokers use the MQTT protocol, based on publications and subscriptions. You can find here more details on this protocol.   
+
+### Mission Planner
+Download and install the latest Mission Planner.
+
+### Python and PyCharm
+Most of the modules are implemented in Python. You need to install versión 3.7 of Python. We recomend you to use PyCharm as IDE for development in Python.
+
+### Vue and Ionic
+
+
+## Contributions
+Students contribute to the development of the Drone Engineering Ecosystem by doing their TFG/TFM. There are three modalities of work: individual, in small group or in a larger group with SCRUM methodology.   
+   
+The individual modality is the usual one. The student develops the work individually according to the objectives established with the tutors. In the small group mode, students form groups of 2 or 3, work as a team, organizing the tasks to their liking, although presenting individual reports at the end (which probably have a good part in common). The oral presentation will also be joint. This modality is ideal for working with colleagues with whom there is a good understanding.   
+   
+In the SCRUM modality, students are grouped into larger groups (4 or more), even if they have not worked together before (or even know each other). The work is carried out according to the guidelines of the agile SCRUM methodology, advancing by sprints. Finally, each student presents the report that describes their contribution to the group's work. The final presentation can be individual or in small groups of students who have worked more closely in the different sprints.
+
 
  
 ## Demo   
