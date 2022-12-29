@@ -33,10 +33,6 @@ The modules of the ecosystem are in development. Each of them a repo in GitHub w
 * *Monitor*:
 [![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-gate-brightgreen.svg)](https://github.com/dronsEETAC/GateDEE) records on board data for future analysis (for instance, all the messages send through the brokers.    
 
-* *Local broker*: on-board middleware that connects the on-board modules through publications and subscription.   
-
-* *Global broker*: middleware that connects the gate with the external modules through publications and subscription.    
-
 * *API REST*:
 [![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-apirest-brightgreen.svg)](https://github.com/dronsEETAC/RESTAPIDEE) a server that provides data storage and retrieval through HTTP basic operations (GET, POST, PUT, DELETE).      
 
@@ -44,11 +40,11 @@ The modules of the ecosystem are in development. Each of them a repo in GitHub w
 [![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-dataservice-brightgreen.svg)](https://github.com/dronsEETAC/DataServiceDEE) controls the data storage and retrieval in the API REST, as required by the rest of modules.
 
 In addition to these modules, the ecosystem uses:
-•	An internal broker (Mosquitto) running on-board to facilitate the communication among on-board services.
-•	An external broker (Mosquitto) running in internet to facilitate the communication between front-end and back-end modules and the drone platform.
-•	The Mission Planner, that is used for development purposes, since it provides an autopilot simulator, so that the ecosystem can be developed and tested without requiring a real drone platform. 
+1. An internal broker (Mosquitto) running on-board to facilitate the communication among on-board services.
+2. An external broker (Mosquitto) running in internet to facilitate the communication between front-end and back-end modules and the drone platform.
+3. The Mission Planner, that is used for development purposes, since it provides an autopilot simulator, so that the ecosystem can be developed and tested without requiring a real drone platform. 
    
-##A case example
+## A case example
 The best way to understand how the Drone Engineering Ecosystem works is through an example.
 Let's imagine a user who wants the drone to scan a certain surface and take photos at certain points. Using the Dashboard the user can prepare the mission by indicating the waypoints to visit and the points where a photo should be taken. From the Dashboard it will send the flight plant to the Autopilot service instructions to the Camera service on when to take the photos. Then, already at the site where the mission must be carried out, the user can use the mobile application to give the order to start the flight plan. From this application the user can also make decisions in an emergency (stop, land, return home, etc.). In addition, on the mobile phone the user can see the photos that the drone is taking. Those photos are also sent to the data service which stores them in the database for further analysis.
 Now imagine that the user does not want to receive all the photos, but only those in which a certain object appears (for example, a car). Also, the user wants the selected photos to be stored on-board and download and process them once the drone has landed. These additional functionalities may require the development of additional modules, such as an image processing service and a data storage and retrieval service, both on board.
