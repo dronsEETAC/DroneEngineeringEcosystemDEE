@@ -1,34 +1,37 @@
 # Drone Engineering Ecosystem   
-![software-arch](https://user-images.githubusercontent.com/32190349/155320787-f8549148-3c93-448b-b79a-388623ca5d3f.png)
+![DEE_software_architecture](https://user-images.githubusercontent.com/100842082/209946685-f3dc19d6-f781-4703-a0da-52a5e6a85fe6.png)
 
 ## General description
 
-The Drone Engineering Ecosystem is a software tool that allows controlling the operation of various types of drones. 
-It allows  to establish flight plans, record flight data and manage the information collected.   
-    
-The ecosystem contains several modules, that are briefly described in the following.
+The Drone Engineering Ecosystem is a software tool that allows controlling the operation a drone platform in different ways and using different types of devices and applications. Look at the figure to see the software architecture and the technologies and tools involved.   
+
+Some of the modules run on board (the red box in the figure). These modules control the different devices of the drone platform (the autopilot, camera, LEDs, servo, etc.). Some others are front-end applications that allow the user to control the drone (specifying flight plans, showing the images send by the drone, etc.). Finally, some modules are the back-end for data storage and recovery. These modules communicate through MQTT brokers (one internal running on board, and one external running in internet).   
+
+The modules of the ecosystem are in development. Each of them a repo in GitHub with the code and detailed information. This is a brief description of each module:   
 
 * *Dashboard*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-dashboard-brightgreen.svg)](https://github.com/dronsEETAC/DashboardDEE) a desktop application that allows the global control of the system. From the dashboard, 
-the user can select the drone platform, control de drone operation and manage the data involved in the mission.
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-dashboard-brightgreen.svg)](https://github.com/dronsEETAC/DashboardDEE) a desktop application that a desktop application (Python + tkinter) that allows the global control of the system (define flight plans, process data comming from the drone, arm, take-off, etc.).
    
+* *DashApp*:
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-dashboard-brightgreen.svg)](https://github.com/dronsEETAC/DashboardDEE) a web app (Vue) with similar functionalities that the Dashboard, but that can be operated from a laptop connected to internet.
+   
+* *Drone Circus*:
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-dashboard-brightgreen.svg)](https://github.com/dronsEETAC/DashboardDEE) a desktop application (Python + tkinter) that allows the user to interact with the drone platform in a fun way (for instance, guide the drone with body poses or with the voice).
+
+
 * *Mobile app*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-mobileapp-brightgreen.svg)](https://github.com/dronsEETAC/DroneMobileAppDEE) an app for smartphones that implements a subset of the functionalities of the dashboard. 
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-mobileapp-brightgreen.svg)](https://github.com/dronsEETAC/DroneMobileAppDEE) a web app (Vue + Ionic) with a reduced set of functionalities that can be operated from a mobile phone or Tablet connected to internet. 
  
 * *Autopilot service*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-autopilot-brightgreen.svg)](https://github.com/dronsEETAC/DroneAutopilotDEE) an on-board module that controls the autopilot to execute the commands coming from the Dashboard
-or the Mobile app (arm, takeoff, go to position, etc.) 
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-autopilot-brightgreen.svg)](https://github.com/dronsEETAC/DroneAutopilotDEE) an on-board module that controls the autopilot to execute the commands coming from other modules (arm, takeoff, go to position, etc.).    
 
 * *Camera service*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-cameracontroller-brightgreen.svg)](https://github.com/dronsEETAC/CameraControllerDEE) an on-board module that controls the on-board camera to execute the commands coming from
-the Dashboard or the Mobile app (take a picture, get the video stream, etc.)   
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-cameracontroller-brightgreen.svg)](https://github.com/dronsEETAC/CameraControllerDEE) an on-board module that controls the on-board camera to execute the commands coming from other modules (take a picture, get the video stream, etc.)       
    
 * *LEDs service*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-ledscontroller-brightgreen.svg)](https://github.com/dronsEETAC/LEDsControllerDEE) an on-board module that controls the LEDs of the drone platform to inform
-of the status of the drone platform, as required by other modules.    
-  
-* *gate*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-gate-brightgreen.svg)](https://github.com/dronsEETAC/GateDEE) connects the on-board modules with the external modules.    
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-ledscontroller-brightgreen.svg)](https://github.com/dronsEETAC/LEDsControllerDEE) an on-board module that controls the LEDs of the drone platform to inform of the status of the drone platform, or a servo installed in the platform, as required by other modules.        
+* *Monitor*:
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-gate-brightgreen.svg)](https://github.com/dronsEETAC/GateDEE) records on board data for future analysis (for instance, all the messages send through the brokers.    
 
 * *Local broker*: on-board middleware that connects the on-board modules through publications and subscription.   
 
@@ -38,12 +41,19 @@ of the status of the drone platform, as required by other modules.
 [![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-apirest-brightgreen.svg)](https://github.com/dronsEETAC/RESTAPIDEE) a server that provides data storage and retrieval through HTTP basic operations (GET, POST, PUT, DELETE).      
 
 * *Data service*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-dataservice-brightgreen.svg)](https://github.com/dronsEETAC/DataServiceDEE) provides the required by the rest of modules interface to access data in the API REST
-via publications and subscriptions. 
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-dataservice-brightgreen.svg)](https://github.com/dronsEETAC/DataServiceDEE) controls the data storage and retrieval in the API REST, as required by the rest of modules.
 
-The Mission Planner module that appears in the figure does not belong to the Ecosystem,
-but is used for development purposes, since it provides an autopilot simulator, 
-so that the ecosystem can be developed and tested without requiring a real drone platform.
+In addition to these modules, the ecosystem uses:
+•	An internal broker (Mosquitto) running on-board to facilitate the communication among on-board services.
+•	An external broker (Mosquitto) running in internet to facilitate the communication between front-end and back-end modules and the drone platform.
+•	The Mission Planner, that is used for development purposes, since it provides an autopilot simulator, so that the ecosystem can be developed and tested without requiring a real drone platform. 
+   
+##A case example
+The best way to understand how the Drone Engineering Ecosystem works is through an example.
+Let's imagine a user who wants the drone to scan a certain surface and take photos at certain points. Using the Dashboard the user can prepare the mission by indicating the waypoints to visit and the points where a photo should be taken. From the Dashboard it will send the flight plant to the Autopilot service instructions to the Camera service on when to take the photos. Then, already at the site where the mission must be carried out, the user can use the mobile application to give the order to start the flight plan. From this application the user can also make decisions in an emergency (stop, land, return home, etc.). In addition, on the mobile phone the user can see the photos that the drone is taking. Those photos are also sent to the data service which stores them in the database for further analysis.
+Now imagine that the user does not want to receive all the photos, but only those in which a certain object appears (for example, a car). Also, the user wants the selected photos to be stored on-board and download and process them once the drone has landed. These additional functionalities may require the development of additional modules, such as an image processing service and a data storage and retrieval service, both on board.
+
+
  
 ## Demo   
 [Drone Engineering Ecosystem demo](https://www.youtube.com/playlist?list=PL64O0POFYjHpXyP-T063RdKRJXuhqgaXY)    
