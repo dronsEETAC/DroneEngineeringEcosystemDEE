@@ -120,6 +120,16 @@ The individual modality is the usual one. The student develops the work individu
    
 In the SCRUM modality, students are grouped into larger groups (4 or more), even if they have not worked together before (or even know each other). The work is carried out according to the guidelines of the agile SCRUM methodology, advancing by sprints. Finally, each student presents the report that describes their contribution to the group's work. The final presentation can be individual or in small groups of students who have worked more closely in the different sprints.
 
+## Starting on-board services
+When operating in production mode, the on-board services must be run in the on-board computer.   
+In this repo you will find a python script (boot.py) that can be used to that purpose. 
+All on-board services and boot.py must be downloaded in the on-board computer and the requirements must be installed. Of course, the mosquitto broker must also be running on-board. 
+The services can be started with this command:
+```
+sudo python3 boot.py
+```
+The boot script will detect if there is internet coverage. If not, the green led will keep fixed and all the services will be started in local and production modes.  
+If there is internet coverage then the user can select the communication model: green led indicates local mode and blue led color indicates global mode. The user can change the mode with the on board-button. If the button is not pressed during 20 seconds the led will keep fixed, the communication mode will be selected and the services will start accordingly.
 
  
 ## Demo   
