@@ -78,15 +78,15 @@ def bootSequence ():
 
 
     print ('model ', model)
-    #print ('Starting LEDs service')
-    #ls = threading.Thread(target=LEDserv.LEDsService(model))
-    #ls.start()
+    print ('Starting LEDs service')
+    ls = threading.Thread(target=LEDserv.LEDsService(model))
+    ls.start()
     print ('Starting autopilot service')
     pas = threading.Thread (target = AutopilotService.AutoServ(model))
     pas.start()
-    #print ('Starting camera service')
-    #cs = threading.Thread(target=CamSerCirco.cameraService(model))
-    #cs.start()
+    print ('Starting camera service')
+    cs = threading.Thread(target=CamSerCirco.cameraService(model))
+    cs.start()
 
 
 if __name__ == '__main__':
