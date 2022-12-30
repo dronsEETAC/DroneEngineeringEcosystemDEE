@@ -169,27 +169,26 @@ The individual modality is the usual one. The student develops the work individu
 In the SCRUM modality, students are grouped into larger groups (4 or more), even if they have not worked together before (or even know each other). The work is carried out according to the guidelines of the agile SCRUM methodology, advancing by sprints. Finally, each student presents the report that describes their contribution to the group's work. The final presentation can be individual or in small groups of students who have worked more closely in the different sprints.
 
 ## 11. Supporting materials   
-A tutorial on Python and Tkinter, very focused in how to desktop modules for the ecosystem
+A tutorial (in Spanish) on Python and Tkinter, very focused in how to desktop modules for the ecosystem    
 [Python and Tkinter for the ecosystem](https://www.youtube.com/watch?v=dxN8M9vAJcc&list=PL64O0POFYjHraA2CPxiQqQyikszUCVuzh)
 
 A nice course on Tkinter can be found here:   
 [Tkinter](https://www.youtube.com/watch?v=YXPyB4XeYLA)   
 
-A tutorial on Vue, also focused in how to develop web app for the ecosystem
+A tutorial (in Spanis) on Vue, also focused in how to develop web app for the ecosystem      
 [Vue for the ecosystem](https://www.youtube.com/watch?v=XCn9stPZ4iY&list=PL64O0POFYjHoeq8dfP-XYPCoNlehSiR_B)
 
-Mosquitto installation and configuration:
+Mosquitto installation and configuration:      
 [Installing Mosquitto in Ubuntu](http://codigoelectronica.com/blog/instalar-mosquitto-ubuntu)      
 [Mosquitto configuration](http://www.steves-internet-guide.com/mossquitto-conf-file)
    
 The basics of MQTT can be found here:   
 [MQTT](https://www.youtube.com/watch?v=EIxdz-2rhLs)   
-More information about Mosquitto and how to install it in Windows and in Linux can be found here:
+More information about Mosquitto and how to install it in Windows and in Linux can be found here:    
 [Mosquitto](https://www.youtube.com/watch?v=DH-VSAACtBk)      
 This is a good example to start using MQTT (using a public broker):    
 [Example](https://www.youtube.com/watch?v=kuyCd53AOtg)   
 
-The API Rest module has been build using the Flask framework. A very simple and clear example on how to use Flask
-(in Spanish) can be found here:    
+The API Rest module has been build using the Flask framework. A very simple and clear example on how to use Flask (in Spanish) can be found here:    
 [Flask](https://youtu.be/Esdj9wlBOaI)
 
