@@ -108,7 +108,12 @@ You can also use the broker running at classpip.upc.edu:8000 in a server in the 
 Communication via Mosquitto brokers use the MQTT protocol, based on publications and subscriptions. You can find here more details on this protocol.   
 
 ### Mission Planner
-Download and install the latest Mission Planner.
+Download and install the latest version of Mission Planner.
+We have recently encountered a problem starting the simulator included in Mission Planner. The system indicates that it cannot find the dll file *cyggcc_s-seh-1.dll*.
+The problem is easily solved by downloading that dll from here (https://www.dll-files.com/cyggcc_s-seh-1.dll.html) and placing the file in the folder:
+```
+D:\Users\usuario\Documents\Mission Planner\sitl
+```
 
 ### Python and PyCharm
 Most of the modules are implemented in Python. You need to install versión 3.7 of Python. We recomend you to use PyCharm as IDE for development in Python.
