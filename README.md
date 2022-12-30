@@ -11,16 +11,13 @@ The modules of the ecosystem are in development. Each of them a repo in GitHub w
 
 * *Dashboard*:
 [![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-dashboard-brightgreen.svg)](https://github.com/dronsEETAC/DashboardDEE) a desktop application that a desktop application (Python + tkinter) that allows the global control of the system (define flight plans, process data comming from the drone, arm, take-off, etc.).
-   
+
 * *DashApp*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-dashapp-brightgreen.svg)]
-(https://github.com/dronsEETAC/DashboardVueDEE) a web app (Vue) with similar functionalities that the Dashboard, but that can be operated from a laptop connected to internet.
-   
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-dashapp-brightgreen.svg)](https://github.com/dronsEETAC/DashboardVueDEE) a web app (Vue) with similar functionalities that the Dashboard, but that can be operated from a laptop connected to internet.
+
 * *Drone Circus*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-dronecircus-brightgreen.svg)]
-(https://github.com/dronsEETAC/DroneCircusDEE)a desktop application (Python + tkinter) that allows the user to interact with the drone platform in a fun way (for instance, guide the drone with body poses or with the voice).
-
-
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-dronecircus-brightgreen.svg)](https://github.com/dronsEETAC/DroneCircusDEE) a desktop application (Python + tkinter) that allows the user to interact with the drone platform in a fun way (for instance, guide the drone with body poses or with the voice).
+   
 * *Mobile app*:
 [![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-mobileapp-brightgreen.svg)](https://github.com/dronsEETAC/DroneMobileAppDEE) a web app (Vue + Ionic) with a reduced set of functionalities that can be operated from a mobile phone or Tablet connected to internet. 
  
