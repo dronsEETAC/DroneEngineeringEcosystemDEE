@@ -10,7 +10,7 @@ Some of the modules run on board (the red box in the figure). These modules cont
 The modules of the ecosystem are in development. Each of them a repo in GitHub with the code and detailed information. This is a brief description of each module:   
 
 * *Dashboard*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-dashboard-brightgreen.svg)](https://github.com/dronsEETAC/DashboardDEE) a desktop application that a desktop application (Python + tkinter) that allows the global control of the system (define flight plans, process data comming from the drone, arm, take-off, etc.).
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Dashboard-brightgreen.svg)](https://github.com/dronsEETAC/DashboardDEE) a desktop application that a desktop application (Python + tkinter) that allows the global control of the system (define flight plans, process data comming from the drone, arm, take-off, etc.).
 
 * *DashApp*:
 [![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-DashApp-brightgreen.svg)](https://github.com/dronsEETAC/DashboardVueDEE) a web app (Vue) with similar functionalities that the Dashboard, but that can be operated from a laptop connected to internet.
@@ -84,7 +84,9 @@ You will requiere quite a few tolos in order to contribute to the Drone Engineer
 We use Git and GitHub to have the software available to everybody in the cloud, to manage different versions of the software and to organize the integration of the contributions of different participants in the project. So create your owno account in GitHub and install Git in your computer.
 
 ### Mosquitto
-You will need to install mosquitto brokers both in your laptop (Windows) and in the on-board computer (Linux). You can find here details on how to install Mosquitto both in Windows and Linux.   
+You will need to install mosquitto brokers both in your laptop (Windows) and in the on-board computer (Linux). There are many totorial in internet on how to install and configure Mosquitto in Ubuntu and in Windows. These are two examples of useful sources:    
+[Installing Mosquitto in Ubuntu](http://codigoelectronica.com/blog/instalar-mosquitto-ubuntu)      
+[Mosquitto configuration](http://www.steves-internet-guide.com/mossquitto-conf-file)
    
 The key question is that you need to run the mosquitto broker with two different listeners. To that purpose use this in the configuration file:
 ```
@@ -100,7 +102,8 @@ As can be seen in figure above (communication modes), the broker listening at po
 The broker listening at port 8000 with websockets protocol will be used as external broker in simulation mode and also in production mode with local communication system.   
 
 In global mode we can use any public access broker as external broker using the websocket protocol. You can find here more information about public Access brokers. We recommend you to use ‘broker.hivemq.com:8000’.   
-
+[Public access brokers](https://mntolia.com/10-free-public-private-mqtt-brokers-for-testing-prototyping)
+  
 You can also use the broker running at classpip.upc.edu:8000 in a server in the Campus services. In this case, you need the credentials for authentification.
 Communication via Mosquitto brokers use the MQTT protocol, based on publications and subscriptions. You can find here more details on this protocol.   
 
