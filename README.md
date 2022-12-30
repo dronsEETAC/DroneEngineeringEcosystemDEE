@@ -55,29 +55,29 @@ The drone platform can be seen in the figure. It uses a HexSoon kit for the fram
 
 ![dron](https://user-images.githubusercontent.com/100842082/209948305-c1f2e4dc-2606-4259-bf78-930cb6b44510.jpg)
 
-    
 A detailed guide on how to assemble, configure and tune up the drone platform can be found here:
 [TransversalProjectGuide.pdf](https://github.com/dronsEETAC/DroneEngineeringEcosystemDEE/files/10319359/TransversalProjectGuide.pdf)
 
+## 4. Demo   
+[Drone Engineering Ecosystem in action](https://www.youtube.com/playlist?list=PL64O0POFYjHpXyP-T063RdKRJXuhqgaXY)    
 
-## 4. Communication mode
+## 5. Communication mode
 In relation to communication system, the Drone Engineering Ecosystem can work in two modes, which are shown in the figure.    
 
 ![connection_mode](https://user-images.githubusercontent.com/100842082/209949189-64d50d9f-3a40-4bf1-9812-2ad213adcc6e.png)
-
 
 In global mode (in the left) it is assumed that the drone platform, the front-end and back-end modules are all connected to the internet and communicate through an external broker. Any public access broker can be used as external broker, or the  private broker that runs on a server at the Campus facilities (which requires access credentials).   
 
 When there is no internet coverage, then local mode should be used (see in the right). In this case, the front-end module (for example, the Dashboard) must connect to the WIFI access point provided by the on-board computer. In this case, the external broker is also executed on-board. Naturally, in local mode it is not possible to use the back-end services that are only operational when there is an internet connection.   
 
-More details on the brokers required to support the communication in the Drone Engineering Ecosystem can be found in section X.
+More details on the brokers required to support the communication in the Drone Engineering Ecosystem can be found in section 8.
 
-## Operation mode
+## 6. Operation mode
 The system can be run in production mode and in simulation mode. The production mode corresponds to the actual execution of the missions. Naturally, in that case the on-board services must be run on the on-board computer. Section X provides some important details on how to start the on-board services.   
     
 In simulation mode all modules (including brokers) run on the same computer (for example, a laptop). In this case, Mission Planner is needed, which incorporates a simulator that will be controlled by the Autopilot service exactly as it would be in production mode.
 
-## The MQTT communication protocol
+## 7. The MQTT communication protocol
 The Drone Engineering Ecosystem uses Mosquitto brokers to facilitate the communication among the different modules. Mosquitto brokers implement the MQTT (Message Queuing Telemetry Transport) communication protocol. You can learn more about MQTT here: 
 [MQTT protocol](http://www.steves-internet-guide.com/mqtt/)
  
@@ -106,17 +106,15 @@ indicating the it can accept any command from any module. Obviously, the functio
 In the repo of echo of the service modules of the ecosystem you will find detailed information on the topic format for each of the services provided by the module.
 
 
-## Tools required
+## 8. Tools required
 You will requiere quite a few tolos in order to contribute to the Drone Engineering Ecosystem.   
 
 ### Git and GitHub
 We use Git and GitHub to have the software available to everybody in the cloud, to manage different versions of the software and to organize the integration of the contributions of different participants in the project. So create your owno account in GitHub and install Git in your computer.
 
 ### Mosquitto
-You will need to install mosquitto brokers both in your laptop (Windows) and in the on-board computer (Linux). There are many totorial in internet on how to install and configure Mosquitto in Ubuntu and in Windows. These are two examples of useful sources:    
-[Installing Mosquitto in Ubuntu](http://codigoelectronica.com/blog/instalar-mosquitto-ubuntu)      
-[Mosquitto configuration](http://www.steves-internet-guide.com/mossquitto-conf-file)
-   
+You will need to install mosquitto brokers both in your laptop (Windows) and in the on-board computer (Linux). There are many totorial in internet on how to install and configure Mosquitto in Ubuntu and in Windows. See below for tutorial materials on MQTT and Mosquitto:    
+
 The key question is that you need to run the mosquitto broker with two different listeners. To that purpose use this in the configuration file:
 ```
 listener 1884
@@ -150,14 +148,8 @@ Most of the modules are implemented in Python. You need to install versión 3.7 
 ### Vue and Ionic
 
 
-## Contributions
-Students contribute to the development of the Drone Engineering Ecosystem by doing their TFG/TFM. There are three modalities of work: individual, in small group or in a larger group with SCRUM methodology.   
-   
-The individual modality is the usual one. The student develops the work individually according to the objectives established with the tutors. In the small group mode, students form groups of 2 or 3, work as a team, organizing the tasks to their liking, although presenting individual reports at the end (which probably have a good part in common). The oral presentation will also be joint. This modality is ideal for working with colleagues with whom there is a good understanding.   
-   
-In the SCRUM modality, students are grouped into larger groups (4 or more), even if they have not worked together before (or even know each other). The work is carried out according to the guidelines of the agile SCRUM methodology, advancing by sprints. Finally, each student presents the report that describes their contribution to the group's work. The final presentation can be individual or in small groups of students who have worked more closely in the different sprints.
 
-## Starting on-board services
+## 9. Starting on-board services
 When operating in production mode, the on-board services must be run in the on-board computer.   
 In this repo you will find a python script (boot.py) that can be used to that purpose. 
 All on-board services and boot.py must be downloaded in the on-board computer and the requirements must be installed. Of course, the mosquitto broker must also be running on-board. 
@@ -168,182 +160,36 @@ sudo python3 boot.py
 The boot script will detect if there is internet coverage. If not, the green led will keep fixed and all the services will be started in local and production modes.  
 If there is internet coverage then the user can select the communication model: green led indicates local mode and blue led color indicates global mode. The user can change the mode with the on board-button. If the button is not pressed during 20 seconds the led will keep fixed, the communication mode will be selected and the services will start accordingly.
 
- 
-## Demo   
-[Drone Engineering Ecosystem demo](https://www.youtube.com/playlist?list=PL64O0POFYjHpXyP-T063RdKRJXuhqgaXY)    
-      
-## Dasboard   
-The dashboard is implemented in Python using Tkinter, that is a library to develop graphic user interfaces (GUI).   
+
+## 10. Contributions
+Students contribute to the development of the Drone Engineering Ecosystem by doing their TFG/TFM. There are three modalities of work: individual, in small group or in a larger group with SCRUM methodology.   
+   
+The individual modality is the usual one. The student develops the work individually according to the objectives established with the tutors. In the small group mode, students form groups of 2 or 3, work as a team, organizing the tasks to their liking, although presenting individual reports at the end (which probably have a good part in common). The oral presentation will also be joint. This modality is ideal for working with colleagues with whom there is a good understanding.   
+   
+In the SCRUM modality, students are grouped into larger groups (4 or more), even if they have not worked together before (or even know each other). The work is carried out according to the guidelines of the agile SCRUM methodology, advancing by sprints. Finally, each student presents the report that describes their contribution to the group's work. The final presentation can be individual or in small groups of students who have worked more closely in the different sprints.
+
+## 11. Supporting materials   
+A tutorial on Python and Tkinter, very focused in how to desktop modules for the ecosystem
+[Python and Tkinter for the ecosystem](https://www.youtube.com/watch?v=dxN8M9vAJcc&list=PL64O0POFYjHraA2CPxiQqQyikszUCVuzh)
+
 A nice course on Tkinter can be found here:   
 [Tkinter](https://www.youtube.com/watch?v=YXPyB4XeYLA)   
 
-## Mobile app   
-The mobile app is implemented in Python using Kivy, that is another library to develop GUI,
-but more suitable for mobile devices. A nice course on Kivy can be found here:   
-[Kivy](https://www.youtube.com/watch?v=l8Imtec4ReQ)   
- 
+A tutorial on Vue, also focused in how to develop web app for the ecosystem
+[Vue for the ecosystem](https://www.youtube.com/watch?v=XCn9stPZ4iY&list=PL64O0POFYjHoeq8dfP-XYPCoNlehSiR_B)
 
-## Brokers   
-Both the local and the global brokers use the MQTT protocol based on publication-subscription mechanism. 
-These are implemented using Mosquitto, that automatically generates the broker.    
-In the development environment, both the local and the global broker are run in the localhost, 
-the global broker in port 1884 and the local broker in port 1883. The basics of MQTT can be found here:   
+Mosquitto installation and configuration:
+[Installing Mosquitto in Ubuntu](http://codigoelectronica.com/blog/instalar-mosquitto-ubuntu)      
+[Mosquitto configuration](http://www.steves-internet-guide.com/mossquitto-conf-file)
+   
+The basics of MQTT can be found here:   
 [MQTT](https://www.youtube.com/watch?v=EIxdz-2rhLs)   
 More information about Mosquitto and how to install it in Windows and in Linux can be found here:
 [Mosquitto](https://www.youtube.com/watch?v=DH-VSAACtBk)      
 This is a good example to start using MQTT (using a public broker):    
 [Example](https://www.youtube.com/watch?v=kuyCd53AOtg)   
 
-## API Rest   
 The API Rest module has been build using the Flask framework. A very simple and clear example on how to use Flask
 (in Spanish) can be found here:    
 [Flask](https://youtu.be/Esdj9wlBOaI)
 
-## Supporting materials   
-[Transversal project guide](https://github.com/miguelvalero/DroneEngineeringEcosystem/blob/main/TransversalProjectGuide.pdf)   
-[Deploy the APP in an Android Mobile Phone](https://youtu.be/0-c6p1GblVc)     
-
-
-## Tools required   
-### Git and GitHub   
-We use Git and GitHub to have the software available to everybody in the cloud, to manage different versions
-of the software and to organize the integration of the contributions of different participants in the project.   
-Create a GitHub account if you do not have one.    
-[GitHub](https://github.com/)      
-Install git in your computer.     
-[Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)      
-It is not recommended to install Gui Client because most of the time, if you are a developer,
-you may want to work with command lines instead of GUI programs.      
-Run these commands in a terminal, for some initial configurations:
-```
-git config --global user.name "Your name"
-git config --global user.email youremail@domain.com
-```
-
-### Mosquitto     
-Download Mosquitto broker:      
-[Mosquitto](https://mosquitto.org/download/)    
-
-In the folder where mosquitto has been downloaded, create two configuration files named "mosquitto1883.conf"
-and "mosquitto1884.conf". Include the following lines in these files:
-In "mosquitto1883.conf", that will be the local broker:   
-```
-listener 1883
-allow_anonymous true
-```
-In "mosquitto1884.conf", that will be the global broker:
-```
-listener 1884
-allow_anonymous true
-```
-You can start running the local broker with this command (from a terminal opened in the mosquitto folder):
-```
- .\mosquitto -c mosquitto1883.conf
-```
-     
-Do the same to start the global broker, from another terminal.
-
-### Mission Planner     
-Download and install the latest Mission Planner installer:      
-[Mission Planner](https://ardupilot.org/planner/docs/mission-planner-installation.html)     
-
-
-### Python
-You will need two versions of Python: python2.7 for the autopilot module and python3.7 for the rest:       
-[python3.7](https://www.python.org/downloads/release/python-370/)    
-[python2.7](https://www.python.org/downloads/release/python-2718/)    
-
-
-### PyCharm 
-PyCharm is the recommended IDE for development in Python.   
-[PyCharm](https://www.jetbrains.com/pycharm/)   
-
-Configure the system interpreter (the versions of python to be used). See this guide:   
-[Configure interpreter](https://www.jetbrains.com/help/pycharm/configuring-local-python-interpreters.html)   
-      
-You will have to install some packages during development. Look at this guide for this:        
-[Installing packages](https://www.youtube.com/watch?v=zCO3KxV2zPI&ab_channel=PhilParisi)     
-
-## Drone Engineering Ecosystem installation   
-Follow these steps:     
-     
-Log-in in your GitHub account. Then make a fork from the Drone Engineering Ecosystem repository. 
-Now you have a copy of the original repository in your account. We will refer to this repository as "forked".     
-[How to fork](https://user-images.githubusercontent.com/99663441/154680663-996139d2-17c7-4630-b338-9a1f53b1ff8d.gif)    
-
-
-
-Clone the forked repository in your computer:   
-```
-   git clone (URL of forked)
-```
-      
-Now you have created the "local" repository. The system has created a connector between the local repository
-and the original. The connector is named "origin". See this with this command:
-```
-   git remote -v
-```
-      
-Now change the name of the connector:
-```
-   git remote rename origin forked
-```
-     
-Create a new connector between the local repository and the original:
-```
-    git remote add origin https://github.com/miguelvalero/DroneEngineeringEcosystem
-```
-     
-Check that now you have two connectors: "forked" connects your local repository with the forked one, 
-and "origin" connects the local with the original:
-```
-   git remote -v
-```
-
-## Procedure for contributions 
-Contributions must be integrated in the original repo only after exhaustive test of correctness.     
-
-These are the steps for contributing, assuming that you have cloned the projects, as indicated in the previous section.     
-
-1. Create a branch for your developments:
-```
-  git checkout –b dev
-```
-          
-2. Develop whatever you want to develop, and test until you are sure that everything is correct.
-          
-3. Commit the changes:
-```
-  git add .
-  git commit –m “Description of your development”
-```
-                   
-4. Push the changes to your forked repo:
-```
-  git push forked dev
-```
-           
-5. From the dev branch of forked repo, make a pull request to integrate the changes into origin. 
-It is important to make sure that the changes are integrated into the main branch of origin. 
-Clearly describe the developments made. When making the pull request, 
-it will be indicated if there are conflicts or not. If there are no conflicts accept the pull request. 
-If there is a conflict then try to resolve the conflicts or contact one of the responsible teachers 
-if you have difficulties to do so.
-           
-6. Download in your local repo the result of the integration:
-```
-  git checkout main
-  git pull origin main
-```
-         
-7. Check that everything is running ok in the new version (which may contain recent developments from other contributors).
-             
-8. Unload the new version to your forked repo:
-```
-  git push forked main
-```
-9. Remove development branches:
-```
-   git branch -d dev
-   git push forked --delete dev
- ```
