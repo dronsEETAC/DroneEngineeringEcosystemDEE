@@ -83,23 +83,23 @@ The Drone Engineering Ecosystem uses Mosquitto brokers to facilitate the communi
  
 MQTT is based on a simple publication/subscription mechanism. Let's see how this protocol is used in the Drone Engineering Ecosystem. Assume that all the modules are connected to a Mosquitto broker. The Autopilot Service may subscribe to the following topic:
 ```
-*dashboard/autopilotService/takeOff*
+dashboard/autopilotService/takeOff
 ```
 If the Dashboard publishes a message in the broker with exactly this topic, the Autopilot Service will run a function where (presumably) it will send the command to the drone to take off. In some case, the published message will include additional information requited by the subscriptor. For instance, the Autopilot Service may require a value indicating the altitude to be reached in the take off operation. The additional information is included in the payload of the message.   
 The Autopilot Service may want to inform the Dashboard that the drone has reached the required altitude. In this case, it will publish a message with the following topic:
 ```
-*autopilotService/dashboard/takenOff*
+autopilotService/dashboard/takenOff
 ```
 Obviously, the Dashboard must have subscribed this topic in order to receive the message.  
 
 Note that our convention for the topic format is: 
 ```
-name of the origin module/name of the destination module/command
+name_of_the_origin_module/name_of_the_destination_module/command
 ```
 
 We can imagine that the Autopilot Service must be ready to accept commands from any of the modules of the ecosystem (not only from the Dashboard) and not only the takeOff command. So the Autopilot Service must subscribe this topic: 
 ```
-*+/autopilotService/+*
++/autopilotService/+
 ```
 indicating the it can accept any command from any module. Obviously, the function that runs when a message is received must analyze the topic to identify the origin module and the command required (and possibly extract the payload it the message is coming with additional data).
   
