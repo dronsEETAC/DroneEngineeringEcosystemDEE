@@ -68,12 +68,12 @@ In relation to communication system, the Drone Engineering Ecosystem can work in
 
 In global mode (in the left) it is assumed that the drone platform, the front-end and back-end modules are all connected to the internet and communicate through an external broker. Any public access broker can be used as external broker, or the  private broker that runs on a server at the Campus facilities (which requires access credentials).   
 
-When there is no internet coverage, then local mode should be used (see in the right). In this case, the front-end module (for example, the Dashboard) must connect to the WIFI access point provided by the on-board computer. In this case, the external broker is also executed on-board. Naturally, in local mode it is not possible to use the back-end services that are only operational when there is an internet connection.   
+When there is no internet coverage, then local mode should be used (see in the right). In this case, the front-end module (for example, the Dashboard) must connect to the WIFI access point provided by the on-board computer. In this case, the external broker is also executed on-board. On-board modules connect to this broker at localhost:8000 but external modules should connect to 10.10.10.1:8000. Naturally, in local mode it is not possible to use the back-end services that are only operational when there is an internet connection.   
 
 More details on the brokers required to support the communication in the Drone Engineering Ecosystem can be found in section 8.
 
 ## 6. Operation mode
-The system can be run in production mode and in simulation mode. The production mode corresponds to the actual execution of the missions. Naturally, in that case the on-board services must be run on the on-board computer. Section X provides some important details on how to start the on-board services.   
+The system can be run in production mode and in simulation mode. The production mode corresponds to the actual execution of the missions. Naturally, in that case the on-board services must be run on the on-board computer. Section 7 provides some important details on how to start the on-board services.   
     
 In simulation mode all modules (including brokers) run on the same computer (for example, a laptop). In this case, Mission Planner is needed, which incorporates a simulator that will be controlled by the Autopilot service exactly as it would be in production mode.
 
