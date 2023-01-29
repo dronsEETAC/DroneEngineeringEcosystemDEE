@@ -173,7 +173,8 @@ Contributions must follow the protocol described in this section. Two cases are 
 
 ### Individual contribution
 The figure shows the sequence of steps involved in an individual contribution.   
-![individualContribution](https://user-images.githubusercontent.com/100842082/215315172-138b5d39-144a-4283-9497-8d5c1ab005ed.png)
+![individualContribution (1)](https://user-images.githubusercontent.com/100842082/215315504-4077ce55-8ab7-41d4-81af-c6f703c14e16.png)     
+
 These two videos show an example. 
 VIDEOS     
 
