@@ -172,12 +172,14 @@ In the SCRUM modality, students are grouped into larger groups (4 or more), even
 Contributions must follow the protocol described in this section. Two cases are considered: individual contribution and team contribution.    
 
 ### Individual contribution
-The figure shows the sequence of steps involved in an individual contribution. These two videos show an example. 
+The figure shows the sequence of steps involved in an individual contribution.   
+![individualContribution](https://user-images.githubusercontent.com/100842082/215315172-138b5d39-144a-4283-9497-8d5c1ab005ed.png)
+These two videos show an example. 
 VIDEOS     
 
 In the first video the individual contribution does not have any conflict. In the second video some conflicts arise. In the following every step shown is these videos is described. While watching the videos you must have in mind the figure.    
 
-* *Demo part 1: Contribution without conflicts*
+*Demo part 1: Contribution without conflicts*
 1. Miguel forks the original repo for the CameraController into his own github account (personal repo)
 2. Clones his personal repo into a folder in his laptop (local repo)
 3. Opens PyCharm and creates a new project with the cloned code (build project with existing resources)
@@ -200,7 +202,7 @@ into the main branch of the original repo. There are not conflicts and the pull 
 16. Miguel deletes the dev branch from both the local and the personal repos.
 17. The personal repo is synchronized with the original repo and local repo is synchronized with the personal repo. Everything is ready for a new contribution.
 
-* *Demo part 2: Contribution with conflicts*
+*Demo part 2: Contribution with conflicts*
 1. Miguel realizes that the requirements.txt file was not updated with the reference to the new library that was installed. A new dev branch is created
 for the new development.
 2. The requirements file is updated and a new line of text is included in the README.md file to clarify the nature of the new contribution.
