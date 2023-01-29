@@ -175,8 +175,10 @@ Contributions must follow the protocol described in this section. Two cases are 
 The figure shows the sequence of steps involved in an individual contribution.   
 ![individualContribution (1)](https://user-images.githubusercontent.com/100842082/215315504-4077ce55-8ab7-41d4-81af-c6f703c14e16.png)     
 
-These two videos show an example. 
-VIDEOS     
+These two videos show an example.   
+[Demo of contribution (part 1)](https://youtu.be/MWoIC6T-5m4)     
+[Demo of contribution (part 2)](https://youtu.be/jSS6Q2iIurU)
+
 
 In the first video the individual contribution does not have any conflict. In the second video some conflicts arise. In the following every step shown is these videos is described. While watching the videos you must have in mind the figure.    
 
