@@ -58,8 +58,8 @@ The drone platform can be seen in the figure. It uses a HexSoon kit for the fram
 A detailed guide on how to assemble, configure and tune up the drone platform can be found here:
 [TransversalProjectGuide.pdf](https://github.com/dronsEETAC/DroneEngineeringEcosystemDEE/files/10319359/TransversalProjectGuide.pdf)
 
-## 4. Demo   
-[Drone Engineering Ecosystem in action](https://www.youtube.com/playlist?list=PL64O0POFYjHpXyP-T063RdKRJXuhqgaXY)    
+## 4. Demos   
+Go to the repos of the different front-end applications (Drone Circus, Dashboard or Mobile App) for nice demos.
 
 ## 5. Communication mode
 In relation to communication system, the Drone Engineering Ecosystem can work in two modes, which are shown in the figure.    
