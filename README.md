@@ -168,7 +168,67 @@ The individual modality is the usual one. The student develops the work individu
    
 In the SCRUM modality, students are grouped into larger groups (4 or more), even if they have not worked together before (or even know each other). The work is carried out according to the guidelines of the agile SCRUM methodology, advancing by sprints. Finally, each student presents the report that describes their contribution to the group's work. The final presentation can be individual or in small groups of students who have worked more closely in the different sprints.
 
-## 11. Supporting materials   
+## 11. Contribution protocol
+Contributions must follow the protocol described in this section. Two cases are considered: individual contribution and team contribution.    
+
+### Individual contribution
+The figure shows the sequence of steps involved in an individual contribution. These two videos show an example. 
+VIDEOS     
+
+In the first video the individual contribution does not have any conflict. In the second video some conflicts arise. In the following every step shown is these videos is described. While watching the videos you must have in mind the figure.    
+
+* *Demo part 1: Contribution without conflicts*
+1. Miguel forks the original repo for the CameraController into his own github account (personal repo)
+2. Clones his personal repo into a folder in his laptop (local repo)
+3. Opens PyCharm and creates a new project with the cloned code (build project with existing resources)
+4. The project requires the installation of several libraries, identified in the file requierements.txt. These libraries
+are installed.
+5. When running the code, a library is missing. It was not in requirements.txt. This library must also be installed. During
+the development new libraries may be also needed and installed.
+6. After the missing library is installed, the code runs well.
+7. A new branch dev is created for the new development.
+8. The pre-commit is installed. This tool will verify that the code satisfies a few code quality rules.
+9. The development is very simple: just change the text of a topic in a subscription and include a line of text in the README.md file
+10. When trying to commit the changes an error occurs. This is because the pre-commit has not be run before the commit.
+11. Among other verifications, pre-commit checks that there are not trailing spaces at the end of lines and checks
+that there is a single blank line at the end of every file. Note that this is not the case for the README.md file. The pre-commit corrects this.
+12. After pre-commit, the commit is successful and the code is pushed into the personal repo. In the case of more elaborated developments, pre-commits and commits must be done frequently, before pushing the code to the personal repo.
+13. A new branch dev is automatically created in the personal repo containing the development. It is time to do a pull request from this dev branch
+into the main branch of the original repo. There are not conflicts and the pull request can be confirmed.
+14. Note that the pre-commit checks are done again to assure that the merged code fulfils the code quality rules.
+15. The owner of the original repo finds a pull request from Miguel. Since there are not conflicts the code can be merged into the main branch.
+16. Miguel deletes the dev branch from both the local and the personal repos.
+17. The personal repo is synchronized with the original repo and local repo is synchronized with the personal repo. Everything is ready for a new contribution.
+
+* *Demo part 2: Contribution with conflicts*
+1. Miguel realizes that the requirements.txt file was not updated with the reference to the new library that was installed. A new dev branch is created
+for the new development.
+2. The requirements file is updated and a new line of text is included in the README.md file to clarify the nature of the new contribution.
+3. A new pull request is created from the dev branch of the personal repo into the main of the original one. However, in this case a conflict appears.
+4. The conflict appears because other people has contributed to the same code while Miguel was preparing his new contribution.
+5. Miguel has the option to resolve the conflict, that appears in the README.md file. Note that github shows the differences between the codes to be merged.
+In some cases, the author of the contribution may not have all the information to solve the conflict (or may have doubts). In this case the conflict will be resolved by the owner of the original repo.
+6. Note that after marking the conflict has solved Miguel forgets to push the commit merge green button. This is the reason he has to repeat the operation of rearranging the README.md file to solve the conflict.
+7. The owner of the original repo finds the new pull request by Miguel. In this case the pre-commit checks are not fulfilled. When rearranging the README.md file Miguel did not take into account
+the rules (no trailing spaces and only one blank line at the end of the file).
+8. After correcting this the owner can merge the code. 
+9. The end of the history is the same as in part 1: Miguel deleted dev branches and synchronizes repos.
+ 
+Note that in the case of long developments, the contributor may want to push frequently his local repo into his personal repo, just to have an updated copy of the development safe in the cloud.
+
+### Team contribution
+The protocol in case of a team contribution is similar, as shown in this figure (no demo videos are needed in this case). Just note that:
+1. The original repo is forked into the personal repo of one member of the team (personal #1 in the figure).
+2. All members of the team clone the personal #1 repo into their laptop and creates a development branch. ATTENTION: they must use different names for the development branches.
+3. Team members develop with frequent pre-commit, commit and pushed into the personal #1 repo (only shown for member #3 in the figure).
+4. Push of different members creates different dev branches in the personal #1 repo. The team should merge all these branches into a single one before contributing to the original repo.
+5. Merging development branches into a single one may cause conflicts that must be solved by the team in order to merge all the developments into a single branch. In the figure, all developments are merged into branch dev1. Then a pull request from dev1 into main in the original repo is generated.
+This pull request may generate conflicts that must be resolved (maybe with the help of the original repo owner).
+6. Finally, all repos are synchronized.
+
+
+
+## 12. Supporting materials   
 A tutorial (in Spanish) on Python and Tkinter, very focused in how to desktop modules for the ecosystem    
 [Python and Tkinter for the ecosystem](https://www.youtube.com/watch?v=dxN8M9vAJcc&list=PL64O0POFYjHraA2CPxiQqQyikszUCVuzh)
 
