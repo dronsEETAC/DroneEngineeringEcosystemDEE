@@ -220,7 +220,10 @@ the rules (no trailing spaces and only one blank line at the end of the file).
 Note that in the case of long developments, the contributor may want to push frequently his local repo into his personal repo, just to have an updated copy of the development safe in the cloud.
 
 ### Team contribution
-The protocol in case of a team contribution is similar, as shown in this figure (no demo videos are needed in this case). Just note that:
+The protocol in case of a team contribution is similar, as shown in this figure (no demo videos are needed in this case).    
+![teamContribution (1)](https://user-images.githubusercontent.com/100842082/215315553-b54a43ca-fd3f-4436-93f1-a18b47848fdd.png)    
+
+Just note that:
 1. The original repo is forked into the personal repo of one member of the team (personal #1 in the figure).
 2. All members of the team clone the personal #1 repo into their laptop and creates a development branch. ATTENTION: they must use different names for the development branches.
 3. Team members develop with frequent pre-commit, commit and pushed into the personal #1 repo (only shown for member #3 in the figure).
