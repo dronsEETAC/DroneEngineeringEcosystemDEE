@@ -146,10 +146,10 @@ D:\Users\usuario\Documents\Mission Planner\sitl
 ```
 
 ### Python and PyCharm
-Most of the modules are implemented in Python. You need to install versión 3.7 of Python. We recomend you to use PyCharm as IDE for development in Python.
+In order to run and contribute to the modules implemented in Python you need to install versión 3.7 of Python. We recomend you to use PyCharm as IDE for development in Python.
 
 ### Node, Vue and Ionic
-
+In order to run and contribute to the modules implemented in Vue, you need to install Node.js (version v16.14.2) and @vue/cli version 4.5.15 and @ionic/cli (in case of the Mobile app). We recomend Visual Code as IDE for development in Vue.
 
 
 ## 9. Starting on-board services
