@@ -1,4 +1,3 @@
-
 import time
 import board
 import neopixel
@@ -6,22 +5,23 @@ from gpiozero import Button
 from signal import pause
 import schedule as s
 import requests
-import CamSerCirco
-import LEDserv
+import CameraService
+import LEDsService
 import AutopilotService
 import threading
+import os
 def task ():
     global pixels
     global red, green, blue
     global cont, s
-    global model, end
+    global communication_mode, end
     cont = cont + 1
     print (cont)
     if cont == 20:
         if green:
-            model = 'local'
+            communication_mode = 'local'
         else:
-            model = 'global'
+            communication_mode = 'global'
         print ('fin')
         end = True
         return s.CancelJob
@@ -55,16 +55,19 @@ def buttonPressed ():
         cont = 0
 
 
-def bootSequence ():
+
+def bootSequence (external_broker, username, password):
     global pixels
     global red, green, blue
-    global model, end, cont
+    global communication_mode, end, cont
+   
+     
     pixels = neopixel.NeoPixel (board.D18,5)
     pixels[0] = (255, 0, 0)
     req = requests.get('http://clients3.google.com/generate_204')
     if req.status_code != 204:
        pixels[0] = (0,255,0)
-       print ('model ', 'local')
+       communication_mode = 'local'
     else:
        green = True
        blue = False
@@ -75,21 +78,58 @@ def bootSequence ():
        s.every(0.5).seconds.do(task)
        while not end:
          s.run_pending()
+    
+    print ('Communicacion mode: ', communication_mode)
 
 
-    print ('model ', model)
+    cmd = 'mosquitto -v -c /etc/mosquitto/mosquitto1884.conf -d'
+    os.system(cmd)
+    print ('internal broker started at port 1884')
     print ('Starting LEDs service')
-    ls = threading.Thread(target=LEDserv.LEDsService(model))
+    ls = threading.Thread(target=LEDsService.LEDsService(
+        communication_mode, 
+        'production',
+        external_broker,
+        username,
+        password
+    ))
+
     ls.start()
+   
     print ('Starting autopilot service')
-    pas = threading.Thread (target = AutopilotService.AutoServ(model))
+    pas = threading.Thread (target = AutopilotService.AutopilotService(
+        communication_mode,
+        'production',
+        external_broker,
+        username,
+        password
+    ))
+
     pas.start()
+   
     print ('Starting camera service')
-    cs = threading.Thread(target=CamSerCirco.cameraService(model))
+    cs = threading.Thread(target=CameraService.CameraService(
+        communication_mode,
+        'production',
+        external_broker,
+        username,
+        password
+    ))
     cs.start()
 
 
 if __name__ == '__main__':
-    # test1.py executed as script
-    # do something
-    bootSequence()
+
+    import sys
+    username = None
+    password = None
+    external_broker = None
+    if len(sys.argv) > 1:
+    	external_broker = sys.argv[1] # in case connection_mode is global
+    	if external_broker == 'classpip.upc.edu':
+        	username = sys.argv[2]
+        	password = sys.argv[3]
+
+    bootSequence(external_broker, username, password)
+
+
