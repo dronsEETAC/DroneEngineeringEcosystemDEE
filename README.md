@@ -113,26 +113,29 @@ You will requiere quite a few tolos in order to contribute to the Drone Engineer
 We use Git and GitHub to have the software available to everybody in the cloud, to manage different versions of the software and to organize the integration of the contributions of different participants in the project. So create your owno account in GitHub and install Git in your computer.
 
 ### Mosquitto
-You will need to install mosquitto brokers both in your laptop (Windows) and in the on-board computer (Linux). There are many totorial in internet on how to install and configure Mosquitto in Ubuntu and in Windows. See below for tutorial materials on MQTT and Mosquitto:    
+As you can see in the figure showing the communication modes, two brokers are needed: the internal and the external broker.   
+The internal broker will be always run in localhome, port 1884, in your laptop when working in simulation mode and in the on board computer when working in production mode.    
+The external broker when working in global mode can be any public broker listening in port 8000 using websocket protocol. We use either 'broker.hivemq.com' or 'classpip.upc.edu'. This second option requieres credentials (username and password) that will be provided by the academic responsibles of the project when required.
+When working in global and simulation models the external broker can also run in localhome, in port 8000 using websockets protocol.   
+When working in local mode the external broker must run in the onboard computer, also in port 8000 using websockets protocol.    
+There are many totorial in internet on how to install and configure Mosquitto in Ubuntu and in Windows. See below for tutorial materials on MQTT and Mosquitto.    
 
-The key question is that you need to run the mosquitto broker with two different listeners. To that purpose use this in the configuration file:
+User this configuration file to start the internal broker:
 ```
 listener 1884
+allow_anonymous true
+```
+and use this configuration file to start the external broker in localhome:
+```
+listener 1883
 allow_anonymous true
 listener 8000
 protocol websockets
 allow_anonymous true
 ```
 
-As can be seen in figure above (communication modes), the broker listening at port 1884 will be used always as the internal broker (either in global, local,  simulation and production modes).   
-
-The broker listening at port 8000 with websockets protocol will be used as external broker in simulation mode and also in production mode with local communication system.   
-
-In global mode we can use any public access broker as external broker using the websocket protocol. You can find here more information about public Access brokers. We recommend you to use ‘broker.hivemq.com:8000’.   
-[Public access brokers](https://mntolia.com/10-free-public-private-mqtt-brokers-for-testing-prototyping)
-  
 You can also use the broker running at classpip.upc.edu:8000 in a server in the Campus services. In this case, you need the credentials for authentification.
-Communication via Mosquitto brokers use the MQTT protocol, based on publications and subscriptions. You can find here more details on this protocol.   
+Communication via Mosquitto brokers use the MQTT protocol, based on publications and subscriptions. You can find bellow more information on this protocol.   
 
 ### Mission Planner
 Download and install the latest version of Mission Planner.
@@ -145,7 +148,7 @@ D:\Users\usuario\Documents\Mission Planner\sitl
 ### Python and PyCharm
 Most of the modules are implemented in Python. You need to install versión 3.7 of Python. We recomend you to use PyCharm as IDE for development in Python.
 
-### Vue and Ionic
+### Node, Vue and Ionic
 
 
 
@@ -155,10 +158,11 @@ In this repo you will find a python script (boot.py) that can be used to that pu
 All on-board services and boot.py must be downloaded in the on-board computer and the requirements must be installed. Of course, the mosquitto broker must also be running on-board. 
 The services can be started with this command:
 ```
-sudo python3 boot.py
+sudo python3 boot.py parameters
 ```
 The boot script will detect if there is internet coverage. If not, the green led will keep fixed and all the services will be started in local and production modes.  
-If there is internet coverage then the user can select the communication model: green led indicates local mode and blue led color indicates global mode. The user can change the mode with the on board-button. If the button is not pressed during 20 seconds the led will keep fixed, the communication mode will be selected and the services will start accordingly.
+If there is internet coverage then the user can select the communication model: green led indicates local mode and blue led color indicates global mode. The user can change the mode with the on board-button. If the button is not pressed during 20 seconds the led will keep fixed, the communication mode will be selected and the services will start accordingly.    
+If you are planning to work in global mode you must provide one addicional parameter to the boot.py script. This parameter is the broker that must be used as external broker (either 'broker.hivemq.com' or 'classpip.upc.edu'). In case you choose the second option then you must provide two additional parameters: username and password.
 
 
 ## 10. Contributions
@@ -256,6 +260,9 @@ More information about Mosquitto and how to install it in Windows and in Linux c
 [Mosquitto](https://www.youtube.com/watch?v=DH-VSAACtBk)      
 This is a good example to start using MQTT (using a public broker):    
 [Example](https://www.youtube.com/watch?v=kuyCd53AOtg)   
+
+You can find here more information about public Access brokers.       
+[Public access brokers](https://mntolia.com/10-free-public-private-mqtt-brokers-for-testing-prototyping)
 
 The API Rest module has been build using the Flask framework. A very simple and clear example on how to use Flask (in Spanish) can be found here:    
 [Flask](https://youtu.be/Esdj9wlBOaI)
