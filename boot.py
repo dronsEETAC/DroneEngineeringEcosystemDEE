@@ -10,6 +10,23 @@ import LEDsService
 import AutopilotService
 import threading
 import os
+
+
+def internet_on():
+    try:
+       req = requests.get('http://www.upc.edu')
+       print ('resultado ', req.status_code)
+       if req.status_code != 200:
+           return False
+       else:
+           return True
+    except requests.exceptions.RequestException as e:  
+       return False
+
+
+
+
+
 def task ():
     global pixels
     global red, green, blue
@@ -64,8 +81,7 @@ def bootSequence (external_broker, username, password):
      
     pixels = neopixel.NeoPixel (board.D18,5)
     pixels[0] = (255, 0, 0)
-    req = requests.get('http://clients3.google.com/generate_204')
-    if req.status_code != 204:
+    if not internet_on():
        pixels[0] = (0,255,0)
        communication_mode = 'local'
     else:
@@ -78,44 +94,47 @@ def bootSequence (external_broker, username, password):
        s.every(0.5).seconds.do(task)
        while not end:
          s.run_pending()
+
     
     print ('Communicacion mode: ', communication_mode)
+    if communication_mode == 'global' and external_broker == None:
+        print ('ERROR: External broker must be specified in case of global communication mode')
+    else:
 
+    	cmd = 'mosquitto -v -c /etc/mosquitto/mosquitto1884.conf -d'
+    	os.system(cmd)
+    	print ('Internal broker started at port 1884')
+    	print ('Starting LEDs service')
+    	ls = threading.Thread(target=LEDsService.LEDsService(
+        	communication_mode, 
+        	'production',
+        	external_broker,
+        	username,
+        	password
+    	))
 
-    cmd = 'mosquitto -v -c /etc/mosquitto/mosquitto1884.conf -d'
-    os.system(cmd)
-    print ('internal broker started at port 1884')
-    print ('Starting LEDs service')
-    ls = threading.Thread(target=LEDsService.LEDsService(
-        communication_mode, 
-        'production',
-        external_broker,
-        username,
-        password
-    ))
-
-    ls.start()
+    	ls.start()
    
-    print ('Starting autopilot service')
-    pas = threading.Thread (target = AutopilotService.AutopilotService(
-        communication_mode,
-        'production',
-        external_broker,
-        username,
-        password
-    ))
+    	print ('Starting autopilot service')
+    	pas = threading.Thread (target = AutopilotService.AutopilotService(
+        	communication_mode,
+        	'production',
+        	external_broker,
+        	username,
+        	password
+    	))
 
-    pas.start()
+    	pas.start()
    
-    print ('Starting camera service')
-    cs = threading.Thread(target=CameraService.CameraService(
-        communication_mode,
-        'production',
-        external_broker,
-        username,
-        password
-    ))
-    cs.start()
+    	print ('Starting camera service')
+    	cs = threading.Thread(target=CameraService.CameraService(
+        	communication_mode,
+        	'production',
+        	external_broker,
+        	username,
+        	password
+    	))
+    	cs.start()
 
 
 if __name__ == '__main__':
@@ -131,5 +150,4 @@ if __name__ == '__main__':
         	password = sys.argv[3]
 
     bootSequence(external_broker, username, password)
-
 
