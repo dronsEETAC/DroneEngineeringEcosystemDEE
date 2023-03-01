@@ -249,7 +249,10 @@ A nice course on Tkinter can be found here:
 
 A tutorial (in Spanis) on Vue, also focused in how to develop web app for the ecosystem      
 [Vue for the ecosystem](https://www.youtube.com/watch?v=XCn9stPZ4iY&list=PL64O0POFYjHoeq8dfP-XYPCoNlehSiR_B)
-
+     
+A tutorial (in Spanis) on Vue + Ionic, also focused in how to develop mobile web app for the ecosystem      
+[Vue + Ionic for the ecosystem](https://www.youtube.com/watch?v=B3HMcvDhRlI&list=PLT01gtFyuSL5MKxNFBtEkah45xEJqqCCn&index=2)
+     
 Mosquitto installation and configuration:      
 [Installing Mosquitto in Ubuntu](http://codigoelectronica.com/blog/instalar-mosquitto-ubuntu)      
 [Mosquitto configuration](http://www.steves-internet-guide.com/mossquitto-conf-file)
