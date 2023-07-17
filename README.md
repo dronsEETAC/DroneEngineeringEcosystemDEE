@@ -81,14 +81,22 @@ When there is no internet coverage, then local mode can be used. In this case, t
 ![direct](https://github.com/dronsEETAC/DroneEngineeringEcosystemDEE/assets/100842082/7cd7b2de-eccf-4fae-904b-3f41ae4bd3bf)
       
 Finally, it is also possible to work in direct mode, which is the only possibility if there is not on-board computer. In direct mode, the autopilot service (am also the external broker) in run as a part of the front-end application and connects directly to the autopilot via the telemetry radio.     
-     
+
+A detailed description of commuinication modes and how to configure the modules in each case can be found here:
+
+[Communication modes](https://www.youtube.com/playlist?list=PLyAtSQhMsD4qeEJ6uV70C_faX7WYyW5_R)
+    
 More details on the brokers required to support the communication modes in the Drone Engineering Ecosystem can be found in section 8.
       
 ## 6. Operation mode
 The system can be run in production mode and in simulation mode. The production mode corresponds to the actual execution of the missions. Naturally, in that case the on-board services must be run on the on-board computer. Section 7 provides some important details on how to start the on-board services.   
     
-In simulation mode all modules (including brokers) run on the same computer (for example, a laptop). In this case, Mission Planner is needed, which incorporates a simulator that will be controlled by the Autopilot service exactly as it would be in production mode.
+In simulation mode all modules (including brokers) run on the same computer (for example, a laptop). In this case, Mission Planner is needed, which incorporates a simulator that will be controlled by the Autopilot service exactly as it would be in production mode. Simulation mode is ideal to develop and test the applicacions before moving to production mode.    
 
+Review the videos on communication modes for details on how to configure also the operation mode:    
+
+[Communication modes](https://www.youtube.com/playlist?list=PLyAtSQhMsD4qeEJ6uV70C_faX7WYyW5_R)
+    
 ## 7. The MQTT communication protocol
 The Drone Engineering Ecosystem uses Mosquitto brokers to facilitate the communication among the different modules. Mosquitto brokers implement the MQTT (Message Queuing Telemetry Transport) communication protocol. You can learn more about MQTT here: 
 [MQTT protocol](http://www.steves-internet-guide.com/mqtt/)
