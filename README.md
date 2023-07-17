@@ -69,18 +69,21 @@ Go to the repos of the different front-end applications (Drone Circus, Dashboard
 
 ## 5. Communication mode
 In relation to communication system, the Drone Engineering Ecosystem can work in three modes.    
+      
 ![global](https://github.com/dronsEETAC/DroneEngineeringEcosystemDEE/assets/100842082/a6ab5a73-8448-4023-bb1e-1127afd8e195)
-
+      
 In global communication mode it is assumed that the drone platform, the front-end and back-end modules are all connected to the internet and communicate through an external broker. Any public access broker can be used as external broker, or the  private broker that runs on a server at the Campus facilities (which requires access credentials).   
       
 ![local](https://github.com/dronsEETAC/DroneEngineeringEcosystemDEE/assets/100842082/9a9aa1e1-9f9f-4b2a-9b17-1a3800665d2a)
+      
 When there is no internet coverage, then local mode can be used. In this case, the front-end module (for example, the Dashboard) must connect to the WIFI access point provided by the on-board computer. In this case, the external broker is also executed on-board. On-board modules connect to this broker at localhost:8000 but external modules should connect to 10.10.10.1:8000. Naturally, in local mode it is not possible to use the back-end services that are only operational when there is an internet connection.   
 
 ![direct](https://github.com/dronsEETAC/DroneEngineeringEcosystemDEE/assets/100842082/7cd7b2de-eccf-4fae-904b-3f41ae4bd3bf)
+      
 Finally, it is also possible to work in direct mode, which is the only possibility if there is not on-board computer. In direct mode, the autopilot service (am also the external broker) in run as a part of the front-end application and connects directly to the autopilot via the telemetry radio.     
      
 More details on the brokers required to support the communication modes in the Drone Engineering Ecosystem can be found in section 8.
-
+      
 ## 6. Operation mode
 The system can be run in production mode and in simulation mode. The production mode corresponds to the actual execution of the missions. Naturally, in that case the on-board services must be run on the on-board computer. Section 7 provides some important details on how to start the on-board services.   
     
