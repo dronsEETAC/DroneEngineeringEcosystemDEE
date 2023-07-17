@@ -102,9 +102,15 @@ Some of the front-end applications can work with a swarm of drones. For instance
 
 A swarm of drones can also work in different communication and operation modes.    
 
+![global_swarm](https://github.com/dronsEETAC/DroneEngineeringEcosystemDEE/assets/100842082/ada86b73-2daf-4b39-8d38-2bdc8df88f93)   
+    
 In global communication mode all drones are connected via internet to the external broker. The front-end application will specify in the topic of its publications which drone is the destination of the command.    
 
-In local communication, all drones and also the front-end device (laptop or mobile phone) are connected to a router. Then the autopilot of every drone connects to the external broker running in the front-end device. Again, the front-end application will specify in the topic of its publications which drone is the destination of the command.   
+![local_swarm](https://github.com/dronsEETAC/DroneEngineeringEcosystemDEE/assets/100842082/0c8fad74-938e-479d-84f1-3c0892221207)
+
+In local communication, all drones and also the front-end device (laptop or mobile phone) are connected to a router. Then the autopilot of every drone connects to the external broker running in the front-end device. Again, the front-end application will specify in the topic of its publications which drone is the destination of the command.    
+
+![direct_swarm](https://github.com/dronsEETAC/DroneEngineeringEcosystemDEE/assets/100842082/d24c1315-58ed-4c37-8c34-685f36fcf11a)
 
 In case of direct communication, we must connect to the front-end device the telemetry radios of every drone in the swarm. The front-end application must run one instance of the autopilot services per dron, all of them connected to the external broker, that will also run in the front-end device.  
 
