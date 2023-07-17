@@ -97,6 +97,20 @@ Review the videos on communication modes for details on how to configure also th
 
 [Communication modes](https://www.youtube.com/playlist?list=PLyAtSQhMsD4qeEJ6uV70C_faX7WYyW5_R)
     
+## 7. Swarm mode
+Some of the front-end applications can work with a swarm of drones. For instance, a swarm of drones can complete in less time the scanning of a certain area.   
+
+A swarm of drones can also work in different communication and operation modes.    
+
+In global communication mode all drones are connected via internet to the external broker. The front-end application will specify in the topic of its publications which drone is the destination of the command.    
+
+In local communication, all drones and also the front-end device (laptop or mobile phone) are connected to a router. Then the autopilot of every drone connects to the external broker running in the front-end device. Again, the front-end application will specify in the topic of its publications which drone is the destination of the command.   
+
+In case of direct communication, we must connect to the front-end device the telemetry radios of every drone in the swarm. The front-end application must run one instance of the autopilot services per dron, all of them connected to the external broker, that will also run in the front-end device.  
+
+A swarm can also be operated in simulation mode. Watch this video for some key points regarding this issue.    
+
+
 ## 7. The MQTT communication protocol
 The Drone Engineering Ecosystem uses Mosquitto brokers to facilitate the communication among the different modules. Mosquitto brokers implement the MQTT (Message Queuing Telemetry Transport) communication protocol. You can learn more about MQTT here: 
 [MQTT protocol](http://www.steves-internet-guide.com/mqtt/)
