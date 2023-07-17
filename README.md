@@ -5,7 +5,13 @@
 
 The Drone Engineering Ecosystem is a software tool that allows controlling the operation a drone platform in different ways and using different types of devices and applications. Look at the figure to see the software architecture and the technologies and tools involved.   
 
-Some of the modules run on board (the red box in the figure). These modules control the different devices of the drone platform (the autopilot, camera, LEDs, servo, etc.). Some others are front-end applications that allow the user to control the drone (specifying flight plans, showing the images send by the drone, etc.). Finally, some modules are the back-end for data storage and recovery. These modules communicate through MQTT brokers (one internal running on board, and one external running in internet).   
+Some of the modules run on board (the red box in the figure). These modules control the different devices of the drone platform (the autopilot, camera, LEDs, servo, etc.). The software onboard is packaged in a Docker container to facilitate installation.   
+    
+Some others modules are front-end applications that allow the user to control the drone (specifying flight plans, showing the images send by the drone, etc.).   There are a variety of frameworks and tools to implement front-end applications, including Python + tkinter (for desktop application, Vue + Ionic (for Webb Apps) and Android Studio, Java, Kotlin or Flutter (for native applications). Some of these front-end applications are able to control a swarm of drones.     
+    
+Finally, some modules are the back-end for data storage and recovery.  
+
+All these modules communicate through MQTT brokers (one internal running on board, and one external running in internet).   
 
 The modules of the ecosystem are in development. Each of them a repo in GitHub with the code and detailed information. This is a brief description of each module:   
 
