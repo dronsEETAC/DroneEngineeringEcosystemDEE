@@ -25,7 +25,10 @@ The modules of the ecosystem are in development. Each of them a repo in GitHub w
 [![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-DroneCircus-brightgreen.svg)](https://github.com/dronsEETAC/DroneCircusDEE) a desktop application (Python + tkinter) that allows the user to interact with the drone platform in a fun way (for instance, guide the drone with body poses or with the voice).
    
 * *Mobile app*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-MobileApp-brightgreen.svg)](https://github.com/dronsEETAC/IonicVueMobileAppDEE) a web app (Vue + Ionic) with a reduced set of functionalities that can be operated from a mobile phone or Tablet connected to internet. 
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-MobileApp-brightgreen.svg)](https://github.com/dronsEETAC/IonicVueMobileAppDEE) a web app (Vue + Ionic) with a reduced set of functionalities that can be operated from a mobile phone or Tablet connected to internet.
+   
+* *DroneDroid*:
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-DroneDroid-brightgreen.svg)](https://github.com/dronsEETAC/IonicVueMobileAppDEE) a native app (Android + Java) for a tablet. Implements basic commands to guide the dron manually, basic fligth planning and drone guiding with tablet movements (using the giroscope). 
  
 * *Autopilot service*:
 [![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-AutopilotService-brightgreen.svg)](https://github.com/dronsEETAC/DroneAutopilotDEE) an on-board module that controls the autopilot to execute the commands coming from other modules (arm, takeoff, go to position, etc.).    
