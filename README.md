@@ -1,5 +1,5 @@
 # Drone Engineering Ecosystem   
-![DEE_software_architecture](https://user-images.githubusercontent.com/100842082/210042172-30ad75ee-cb05-49e4-8ceb-e1b33bb1b6ea.png)
+![esquema_v2](https://github.com/dronsEETAC/DroneEngineeringEcosystemDEE/assets/100842082/d0cde072-e799-4e05-8258-45dfb87f13e6)
 
 ## 1. General description
   
