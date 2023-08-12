@@ -117,7 +117,8 @@ In local communication, all drones and also the front-end device (laptop or mobi
 
 In case of direct communication, we must connect to the front-end device the telemetry radios of every drone in the swarm. The front-end application must run one instance of the autopilot services per dron, all of them connected to the external broker, that will also run in the front-end device.  
 
-A swarm can also be operated in simulation mode. Watch this video for some key points regarding this issue.    
+A swarm can also be operated in simulation mode. Watch this video for some key points regarding this issue.       
+[Simulating a swarm] (https://www.youtube.com/watch?v=nUItdJ4_QTA)
 
 
 ## 7. The MQTT communication protocol
