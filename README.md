@@ -23,7 +23,7 @@ The modules are organized into blocks, depending on the technologies used for th
 
 
 * *Desktop applications*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Desktop-orange.svg)](https://github.com/dronsEETAC/DEE_Desktop) Front-end modules developed using Python and Tkinter (or CustomTkinter) as GUI.
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Desktop-orange.svg)](https://github.com/dronsEETAC/DEE_DesktopApplications) Front-end modules developed using Python and Tkinter (or CustomTkinter) as GUI.
 
 * *WebApps*:
 [![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-WebApps-orange.svg)](https://github.com/dronsEETAC/DEE_WebApps) Front-end modules in the form of WebApp, developed using Vue and Ionic.
