@@ -57,7 +57,7 @@ A detailed guide on how to assemble, configure and tune up the drone platform ca
 ## 4. Demos   
 Go to the repos of the different front-end applications (Drone Circus, Dashboard or Mobile App) for nice demos.
 
-## 5. Communication mode
+## 5. Communication modes
 In relation to communication system, the Drone Engineering Ecosystem can work in three modes.    
       
 ![global](https://github.com/dronsEETAC/DroneEngineeringEcosystemDEE/assets/100842082/a6ab5a73-8448-4023-bb1e-1127afd8e195)
@@ -78,7 +78,7 @@ A detailed description of commuinication modes and how to configure the modules 
     
 More details on the brokers required to support the communication modes in the Drone Engineering Ecosystem can be found in section 8.
       
-## 6. Operation mode
+## 6. Operation modes
 The system can be run in production mode and in simulation mode. The production mode corresponds to the actual execution of the missions. Naturally, in that case the on-board services must be run on the on-board computer. Section 7 provides some important details on how to start the on-board services.   
     
 In simulation mode all modules (including brokers) run on the same computer (for example, a laptop). In this case, Mission Planner is needed, which incorporates a simulator that will be controlled by the Autopilot service exactly as it would be in production mode. Simulation mode is ideal to develop and test the applicacions before moving to production mode.    
@@ -137,15 +137,21 @@ indicating the it can accept any command from any module. Obviously, the functio
 In the repo of echo of the service modules of the ecosystem you will find detailed information on the topic format for each of the services provided by the module.
 
 
-## 8. Tools required
-You will requiere quite a few tolos in order to contribute to the Drone Engineering Ecosystem.   
+## 8. Tools requiredregardless of the type of contribution to be made
+You will requiere quite a few tools in order to contribute to the Drone Engineering Ecosystem. In this section you will find information about general tools requiered, regardless of the type of contribution to be made. Other tools will be required depending on the type of contribution. The information on these tools can be found in the corresponding repos.
 
 ### Git and GitHub
 We use Git and GitHub to have the software available to everybody in the cloud, to manage different versions of the software and to organize the integration of the contributions of different participants in the project. So create your owno account in GitHub and install Git in your computer.
 
 ### Mosquitto
 As you can see in the figure showing the communication modes, two brokers are needed: the internal and the external broker.   
-The internal broker will be always run in localhome, port 1884, in your laptop when working in simulation mode and in the on board computer when working in production mode.    
+The internal broker will be always run in localhome, port 1884, in your laptop when working in simulation mode and in the on board computer when working in production mode.  Use this configuration to start the internal broker:
+User this configuration file to start the internal broker:
+```
+listener 1884
+allow_anonymous true
+```
+The external broker must use the websocket protocol. Moreover, when running secure WebApps, the communication with the external broker must also be secure. 
 The external broker when working in global mode can be any public broker listening in port 8000 using websocket protocol. We use either 'broker.hivemq.com' or 'classpip.upc.edu'. This second option requieres credentials (username and password) that will be provided by the academic responsibles of the project when required.
 When working in global and simulation models the external broker can also run in localhome, in port 8000 using websockets protocol.   
 When working in local mode the external broker must run in the onboard computer, also in port 8000 using websockets protocol.    
