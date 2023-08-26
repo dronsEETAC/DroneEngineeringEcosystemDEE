@@ -169,7 +169,7 @@ EXPLICAR AQUI COMO SE CONFIGURA EL BROKER EXTERNO CON CERTIFICADO PARA LOCALHOST
    
 There are many tUtorial in internet on how to install and configure Mosquitto in Ubuntu and in Windows. See below for tutorial materials on MQTT and Mosquitto.    
 
-Communication via Mosquitto brokers use the MQTT protocol, based on publications and subscriptions. You can find bellow more information on this protocol.   
+Communication via Mosquitto brokers use the MQTT protocol, based on publications and subscriptions, as described in section 7.
 
 ### Mission Planner
 Download and install the latest version of Mission Planner.
