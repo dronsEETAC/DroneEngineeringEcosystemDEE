@@ -19,66 +19,24 @@ In addition to these modules, the ecosystem uses:
 The modules are organized into blocks, depending on the technologies used for their development. For each block there is a GitHub repo where the code of the different modules belonging to the block can be found together with information about the technologies used (installation instructions, tutorials, demos, etc.). These are the repos of the different blocks:
 
 * *On board*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-OnBoard-orange.svg)]() Modules that run on board (shown in the red box of the figure).
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-OnBoard-orange.svg)](https://github.com/dronsEETAC/DEE_OnBoard) Modules that run on board (shown in the red box of the figure).
 
 
 * *Desktop applications*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Desktop-orange.svg)]() Front-end modules developed using Python and Tkinter (or CustomTkinter) as GUI.
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Desktop-orange.svg)](https://github.com/dronsEETAC/DEE_Desktop) Front-end modules developed using Python and Tkinter (or CustomTkinter) as GUI.
 
 * *WebApps*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-WebApps-orange.svg)]() Front-end modules in the form of WebApp, developed using Vue and Ionic.
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-WebApps-orange.svg)](https://github.com/dronsEETAC/DEE_WebApps) Front-end modules in the form of WebApp, developed using Vue and Ionic.
 
 * *Android Apps*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Android-orange.svg)]() Front-end modules developed for Android native using Java or Kotlin.
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Android-orange.svg)](https://github.com/dronsEETAC/DEE_Android) Front-end modules developed for Android native using Java or Kotlin.
 
 * *Flutter Apps*:
 [![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Flutter-orange.svg)]() Front-end modules developed for Android native using Flutter.
 
 * *Back End*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-BackEnd-orange.svg)]() Modules that serve as on hearth back end for computation and data storage and retrieval.
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-BackEnd-orange.svg)](https://github.com/dronsEETAC/DEE_BackEnd) Modules that serve as on hearth back end for computation and data storage and retrieval.
 
-
-
-
-
-
-
-
-
-
-
-* *Dashboard*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Dashboard-brightgreen.svg)](https://github.com/dronsEETAC/DashboardDEE) a desktop application that a desktop application (Python + tkinter) that allows the global control of the system (define flight plans, process data comming from the drone, arm, take-off, etc.).
-
-* *DashApp*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-DashApp-brightgreen.svg)](https://github.com/dronsEETAC/DashboardVueDEE) a web app (Vue) with similar functionalities that the Dashboard, but that can be operated from a laptop connected to internet.
-
-* *Drone Circus*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-DroneCircus-brightgreen.svg)](https://github.com/dronsEETAC/DroneCircusDEE) a desktop application (Python + tkinter) that allows the user to interact with the drone platform in a fun way (for instance, guide the drone with body poses or with the voice).
-   
-* *Mobile app*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-MobileApp-brightgreen.svg)](https://github.com/dronsEETAC/IonicVueMobileAppDEE) a web app (Vue + Ionic) with a reduced set of functionalities that can be operated from a mobile phone or Tablet connected to internet.
-   
-* *DroneDroid*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-DroneDroid-brightgreen.svg)](https://github.com/dronsEETAC/DroneDroid) a native app (Android + Java) for a tablet. Implements basic commands to guide the dron manually, basic fligth planning and drone guiding with tablet movements (using the giroscope).
- 
-* *Autopilot service*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-AutopilotService-brightgreen.svg)](https://github.com/dronsEETAC/DroneAutopilotDEE) an on-board module that controls the autopilot to execute the commands coming from other modules (arm, takeoff, go to position, etc.).    
-
-* *Camera service*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-CameraService-brightgreen.svg)](https://github.com/dronsEETAC/CameraControllerDEE) an on-board module that controls the on-board camera to execute the commands coming from other modules (take a picture, get the video stream, etc.)       
-   
-* *LEDs service*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-LEDsService-brightgreen.svg)](https://github.com/dronsEETAC/LEDsControllerDEE) an on-board module that controls the LEDs of the drone platform to inform of the status of the drone platform, or a servo installed in the platform, as required by other modules.  
-    
-* *Monitor*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Monitor-brightgreen.svg)](https://github.com/dronsEETAC/MonitorDEE) records on board data for future analysis (for instance, all the messages send through the brokers.    
-
-* *API REST*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-APIREST-brightgreen.svg)](https://github.com/dronsEETAC/APIRESTDEE) a server that provides data storage and retrieval through HTTP basic operations (GET, POST, PUT, DELETE).      
-
-* *Data service*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-DataService-brightgreen.svg)](https://github.com/dronsEETAC/DataServiceDEE) controls the data storage and retrieval in the API REST, as required by the rest of modules.
 
 
    
@@ -314,17 +272,6 @@ This pull request may generate conflicts that must be resolved (maybe with the h
 
 
 ## 12. Supporting materials   
-A tutorial (in Spanish) on Python and Tkinter, very focused in how to desktop modules for the ecosystem    
-[Python and Tkinter for the ecosystem](https://www.youtube.com/watch?v=dxN8M9vAJcc&list=PL64O0POFYjHraA2CPxiQqQyikszUCVuzh)
-
-A nice course on Tkinter can be found here:   
-[Tkinter](https://www.youtube.com/watch?v=YXPyB4XeYLA)   
-
-A tutorial (in Spanis) on Vue, also focused in how to develop web app for the ecosystem      
-[Vue for the ecosystem](https://www.youtube.com/watch?v=XCn9stPZ4iY&list=PL64O0POFYjHoeq8dfP-XYPCoNlehSiR_B)
-     
-A tutorial (in Spanis) on Vue + Ionic, also focused in how to develop mobile web app for the ecosystem      
-[Vue + Ionic for the ecosystem](https://www.youtube.com/playlist?list=PLT01gtFyuSL5MKxNFBtEkah45xEJqqCCn)
      
 Mosquitto installation and configuration:      
 [Installing Mosquitto in Ubuntu](http://codigoelectronica.com/blog/instalar-mosquitto-ubuntu)      
