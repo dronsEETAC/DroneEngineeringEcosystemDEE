@@ -155,14 +155,11 @@ The external broker must use the websocket protocol. Moreover, when running secu
 When internet is available (for instance, when using global communication mode) we can use as external broker one of the brokers shown in the table:
 
 Name | port | protocol | notes | 
---- | --- | --- | --- |
 broker.hivemq.com | 8000 | websockets| 290 | 
---- | --- | --- | --- |
 broker.hivemq.com | 8883 | secure websockets| In case of using secure WebApps | 
---- | --- | --- | --- |
-classpip.upc.edu | 8000 |  websockets| Requiere credentias provided by the DEE academic responsible  | 
---- | --- | --- | --- |
-classpip.upc.edu | 8883 |  wsecure websockets|  In case of using secure WebApps. Requiere credentias provided by the DEE academic responsible | 
+classpip.upc.edu | 8000 |  websockets| Requiere credentials provided by the DEE academic responsible  | 
+classpip.upc.edu | 8884 |  secure websockets|  In case of using secure WebApps. Requiere credentias
+ls provided by the DEE academic responsible | 
 
 
 When internet is not available (for instance, when using local or direct communication modes) a mosquitto broker must be running on board or in localhost. The required configuration for this mosquitto broker is that:
