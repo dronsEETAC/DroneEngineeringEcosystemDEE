@@ -11,9 +11,41 @@ Some others modules are front-end applications that allow the user to control th
     
 Finally, some modules are the back-end for data storage and recovery.  
 
-All these modules communicate through MQTT brokers (one internal running on board, and one external running in internet).   
+In addition to these modules, the ecosystem uses:
+1. An internal broker (Mosquitto) running on-board to facilitate the communication among on-board services.
+2. An external broker (Mosquitto) running in internet to facilitate the communication between front-end and back-end modules and the drone platform.
+3. The Mission Planner, that is used for development purposes, since it provides an autopilot simulator, so that the ecosystem can be developed and tested without requiring a real drone platform. 
 
-The modules of the ecosystem are in development. Each of them a repo in GitHub with the code and detailed information. This is a brief description of each module:   
+The modules are organized into blocks, depending on the technologies used for their development. For each block there is a GitHub repo where the code of the different modules belonging to the block can be found together with information about the technologies used (installation instructions, tutorials, demos, etc.). These are the repos of the different blocks:
+
+* *On board*:
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-OnBoard-orange.svg)](): Modules that run on board (shown in the red box of the figure).
+
+
+* *Desktop applications*:
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Desktop-orange.svg)](): Front-end modules developed using Python and Tkinter (or CustomTkinter) as GUI.
+
+* *WebApps*:
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-WebApps-orange.svg)](): Front-end modules in the form of WebApp, developed using Vue and Ionic.
+
+* *Android Apps*:
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Android-orange.svg)](): Front-end modules developed for Android native using Java or Kotlin.
+
+* *Flutter Apps*:
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Flutter-orange.svg)](): Front-end modules developed for Android native using Flutter.
+
+* *Back End*:
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-BackEnd-orange.svg)](): Modules that serve as on hearth back end for computation and data storage and retrieval.
+
+
+
+
+
+
+
+
+
+
 
 * *Dashboard*:
 [![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Dashboard-brightgreen.svg)](https://github.com/dronsEETAC/DashboardDEE) a desktop application that a desktop application (Python + tkinter) that allows the global control of the system (define flight plans, process data comming from the drone, arm, take-off, etc.).
@@ -48,10 +80,7 @@ The modules of the ecosystem are in development. Each of them a repo in GitHub w
 * *Data service*:
 [![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-DataService-brightgreen.svg)](https://github.com/dronsEETAC/DataServiceDEE) controls the data storage and retrieval in the API REST, as required by the rest of modules.
 
-In addition to these modules, the ecosystem uses:
-1. An internal broker (Mosquitto) running on-board to facilitate the communication among on-board services.
-2. An external broker (Mosquitto) running in internet to facilitate the communication between front-end and back-end modules and the drone platform.
-3. The Mission Planner, that is used for development purposes, since it provides an autopilot simulator, so that the ecosystem can be developed and tested without requiring a real drone platform. 
+
    
 ## 2. A case example
 The best way to understand how the Drone Engineering Ecosystem works is through an example.
