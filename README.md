@@ -151,27 +151,26 @@ User this configuration file to start the internal broker:
 listener 1884
 allow_anonymous true
 ```
-The external broker must use the websocket protocol. Moreover, when running secure WebApps, the communication with the external broker must also be secure. 
-The external broker when working in global mode can be any public broker listening in port 8000 using websocket protocol. We use either 'broker.hivemq.com' or 'classpip.upc.edu'. This second option requieres credentials (username and password) that will be provided by the academic responsibles of the project when required.
-When working in global and simulation models the external broker can also run in localhome, in port 8000 using websockets protocol.   
-When working in local mode the external broker must run in the onboard computer, also in port 8000 using websockets protocol.    
-There are many totorial in internet on how to install and configure Mosquitto in Ubuntu and in Windows. See below for tutorial materials on MQTT and Mosquitto.    
+The external broker must use the websocket protocol. Moreover, when running secure WebApps, the communication with the external broker must use secure websockets.   
+When internet is available (for instance, when using global communication mode) we can use as external broker one of the brokers shown in the table:
 
-User this configuration file to start the internal broker:
-```
-listener 1884
-allow_anonymous true
-```
-and use this configuration file to start the external broker in localhome:
-```
-listener 1883
-allow_anonymous true
-listener 8000
-protocol websockets
-allow_anonymous true
-```
+Name | port | protocol | notes | 
+--- | --- | --- | --- |
+broker.hivemq.com | 8000 | websockets| 290 | 
+--- | --- | --- | --- |
+broker.hivemq.com | 8883 | secure websockets| In case of using secure WebApps | 
+--- | --- | --- | --- |
+classpip.upc.edu | 8000 |  websockets| Requiere credentias provided by the DEE academic responsible  | 
+--- | --- | --- | --- |
+classpip.upc.edu | 8883 |  wsecure websockets|  In case of using secure WebApps. Requiere credentias provided by the DEE academic responsible | 
 
-You can also use the broker running at classpip.upc.edu:8000 in a server in the Campus services. In this case, you need the credentials for authentification.
+
+When internet is not available (for instance, when using local or direct communication modes) a mosquitto broker must be running on board or in localhost. The required configuration for this mosquitto broker is that:
+EXPLICAR AQUI COMO SE CONFIGURA EL BROKER EXTERNO CON CERTIFICADO PARA LOCALHOST Y PARA LA RASPI
+
+   
+There are many tUtorial in internet on how to install and configure Mosquitto in Ubuntu and in Windows. See below for tutorial materials on MQTT and Mosquitto.    
+
 Communication via Mosquitto brokers use the MQTT protocol, based on publications and subscriptions. You can find bellow more information on this protocol.   
 
 ### Mission Planner
@@ -181,12 +180,6 @@ The problem is easily solved by downloading that dll from here (https://www.dll-
 ```
 D:\Users\usuario\Documents\Mission Planner\sitl
 ```
-
-### Python and PyCharm
-In order to run and contribute to the modules implemented in Python you need to install versión 3.7 of Python. We recomend you to use PyCharm as IDE for development in Python.
-
-### Node, Vue and Ionic
-In order to run and contribute to the modules implemented in Vue, you need to install Node.js (version v16.14.2) and @vue/cli version 4.5.15 and @ionic/cli (in case of the Mobile app). We recomend Visual Code as IDE for development in Vue.
 
 
 ## 9. Starting on-board services
