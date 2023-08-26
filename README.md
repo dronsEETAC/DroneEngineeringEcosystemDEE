@@ -19,23 +19,23 @@ In addition to these modules, the ecosystem uses:
 The modules are organized into blocks, depending on the technologies used for their development. For each block there is a GitHub repo where the code of the different modules belonging to the block can be found together with information about the technologies used (installation instructions, tutorials, demos, etc.). These are the repos of the different blocks:
 
 * *On board*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-OnBoard-orange.svg)](): Modules that run on board (shown in the red box of the figure).
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-OnBoard-orange.svg)]() Modules that run on board (shown in the red box of the figure).
 
 
 * *Desktop applications*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Desktop-orange.svg)](): Front-end modules developed using Python and Tkinter (or CustomTkinter) as GUI.
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Desktop-orange.svg)]() Front-end modules developed using Python and Tkinter (or CustomTkinter) as GUI.
 
 * *WebApps*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-WebApps-orange.svg)](): Front-end modules in the form of WebApp, developed using Vue and Ionic.
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-WebApps-orange.svg)]() Front-end modules in the form of WebApp, developed using Vue and Ionic.
 
 * *Android Apps*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Android-orange.svg)](): Front-end modules developed for Android native using Java or Kotlin.
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Android-orange.svg)]() Front-end modules developed for Android native using Java or Kotlin.
 
 * *Flutter Apps*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Flutter-orange.svg)](): Front-end modules developed for Android native using Flutter.
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Flutter-orange.svg)]() Front-end modules developed for Android native using Flutter.
 
 * *Back End*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-BackEnd-orange.svg)](): Modules that serve as on hearth back end for computation and data storage and retrieval.
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-BackEnd-orange.svg)]() Modules that serve as on hearth back end for computation and data storage and retrieval.
 
 
 
