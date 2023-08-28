@@ -164,10 +164,17 @@ classpip.upc.edu | 8884 |  secure websockets|  In case of using secure WebApps. 
 
 
 When internet is not available (for instance, when using local or direct communication modes) a mosquitto broker must be running on board or in localhost. The required configuration for this mosquitto broker is that:
-EXPLICAR AQUI COMO SE CONFIGURA EL BROKER EXTERNO CON CERTIFICADO PARA LOCALHOST Y PARA LA RASPI
+```
+listener 1883
+listener 8000
+protocol websockets
+socket_domain ipv4
+allow_anonymous true
+```
 
+Note that in this case we do not need secure websockets since WepApp (which require secure websockets) will allways operate with internet available and any of the brokers in the table above can be used in this case.
    
-There are many tUtorial in internet on how to install and configure Mosquitto in Ubuntu and in Windows. See below for tutorial materials on MQTT and Mosquitto.    
+There are many tutorial in internet on how to install and configure Mosquitto in Ubuntu and in Windows. See below for tutorial materials on MQTT and Mosquitto.    
 
 Communication via Mosquitto brokers use the MQTT protocol, based on publications and subscriptions, as described in section 7.
 
