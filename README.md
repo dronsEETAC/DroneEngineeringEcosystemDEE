@@ -1,5 +1,5 @@
 # Drone Engineering Ecosystem   
-![esquema_v2](https://github.com/dronsEETAC/DroneEngineeringEcosystemDEE/assets/100842082/a40d6ffb-c42f-4928-8a5d-4085303b1328)
+![esquema_v3](https://github.com/dronsEETAC/DroneEngineeringEcosystemDEE/assets/100842082/69f7d153-fcf3-4d17-a175-3ae59709994d)
 
 ## 1. General description
   
