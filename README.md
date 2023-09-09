@@ -32,7 +32,7 @@ The modules are organized into blocks, depending on the technologies used for th
 [![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Android-orange.svg)](https://github.com/dronsEETAC/DEE_Android) Front-end modules developed for Android native using Java or Kotlin.
 
 * *Flutter Apps*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Flutter-orange.svg)]() Front-end modules developed for Android native using Flutter.
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Flutter-orange.svg)](https://github.com/dronsEETAC/DEE_Flutter) Front-end modules developed using Flutter.
 
 * *Back End*:
 [![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-BackEnd-orange.svg)](https://github.com/dronsEETAC/DEE_BackEnd) Modules that serve as on hearth back end for computation and data storage and retrieval.
