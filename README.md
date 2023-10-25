@@ -304,7 +304,7 @@ Title (with link)  | Author | Year
 [Operaciones de enjambre en DEE](https://upcommons.upc.edu/handle/2117/395270) | SÁNCHEZ ERASO, SERGIO | 2023
 [Drone control and monitoring by means of a web application](https://upcommons.upc.edu/handle/2117/395271) | SINGH ATWAL, JASKIRAT |  2023
 [From Backend to DashMobile: Expanding the Horizons of the Drone Engineering Ecosystem](https://upcommons.upc.edu/handle/2117/394931)| PINTO MORENO, ALEJANDRO SAMUEL |  2023 
-[Contribución al Drone Engineering Ecosystem con Android Nativo] (https://upcommons.upc.edu/handle/2117/393653) | NUEZ ZARAGOZA, LAURA |  2023
+[Contribución al Drone Engineering Ecosystem con Android Nativo](https://upcommons.upc.edu/handle/2117/393653) | NUEZ ZARAGOZA, LAURA |  2023
 [Desenvolupament i integració de jocs i aplicacions web al Drone Engineering Ecosystem](https://upcommons.upc.edu/handle/2117/393331) |  ORPELLA PALOMAR, JOANA |  2023
 [Diseño e implementación de una estación de control de drones en Android nativo](https://upcommons.upc.edu/handle/2117/392005)| CASAÑA CABRERIZO, POL |  2023
 [Study of drone synchronization](https://upcommons.upc.edu/handle/2117/383486) | JOHERA IZQUIERDO, JOEL |  2023
