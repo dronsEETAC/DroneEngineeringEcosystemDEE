@@ -298,11 +298,9 @@ The API Rest module has been build using the Flask framework. A very simple and 
 ## 13.Compilation of TFG and TFM projects   
 
 
-Name | port | protocol | notes 
+Title  | Author | Year | URL 
 --- | --- | --- | --- 
-broker.hivemq.com   
-kjjkjksasa   
-jsajksajk   | 8000 | websockets| 
+Disseny i Implementació del Mode Cursa en el Drone Circus, del Drone Engineering Ecosystem (DEE) | GARCIA MEDIAVILLA, PABLO | 2023| https://upcommons.upc.edu/handle/2117/395234
 broker.hivemq.com | 8883 | secure websockets| In case of using secure WebAppsSeconds 
 classpip.upc.edu | 8000 |  websockets| Requiere credentials provided by the DEE academic responsible 
 classpip.upc.edu | 8884 |  secure websockets|  In case of using secure WebApps. Requiere credentials provided by the DEE academic responsible 
