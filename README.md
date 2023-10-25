@@ -304,4 +304,16 @@ Disseny i Implementació del Mode Cursa en el Drone Circus, del Drone Engineerin
 Operaciones de enjambre en DEE | SÁNCHEZ ERASO, SERGIO | 2023| https://upcommons.upc.edu/handle/2117/395270
 Drone control and monitoring by means of a web application | SINGH ATWAL, JASKIRAT |  2023| https://upcommons.upc.edu/handle/2117/395271
 From Backend to DashMobile: Expanding the Horizons of the Drone Engineering Ecosystem | PINTO MORENO, ALEJANDRO SAMUEL |  2023| https://upcommons.upc.edu/handle/2117/394931  
+Contribución al Drone Engineering Ecosystem con Android Nativo | NUEZ ZARAGOZA, LAURA |  2023| https://upcommons.upc.edu/handle/2117/393653  
+Desenvolupament i integració de jocs i aplicacions web al Drone Engineering Ecosystem |  ORPELLA PALOMAR, JOANA |  2023| https://upcommons.upc.edu/handle/2117/393331 
+Diseño e implementación de una estación de control de drones en Android nativo | CASAÑA CABRERIZO, POL |  2023| https://upcommons.upc.edu/handle/2117/392005
+Study of drone synchronization | JOHERA IZQUIERDO, JOEL |  2023| https://upcommons.upc.edu/handle/2117/383486
+Design, development, and validation of a web-based control application for drones | LE GALL, THÉO EVAN |  2023| https://upcommons.upc.edu/handle/2117/392647  
+Drone-Based Panorama Stitching: A Study of SIFT, FLANN, and RANSAC Techniques | CHANG, YICHENG |  2023| https://upcommons.upc.edu/handle/2117/392245
+Autonomous transmission tower inspection using UAV | COLOMÉ SANZ, FERRAN |  2023| https://upcommons.upc.edu/handle/2117/390947
+Estandardització i posada en marxa de l¿ecosistema anomenat Drone Engineering Ecosystem | AGUILA I PALLEJÀ, GUILLEM |  2023| https://upcommons.upc.edu/handle/2117/385113
+Contribution to the development of a drone engineering station | YILAKEQI |  2022| https://upcommons.upc.edu/handle/2117/376354
+Estudi sobre la viabilitat de diferents tecnologies per un ecosistema de drons | LLOVERAS ORTEGA, GUILLEM |  2022| https://upcommons.upc.edu/handle/2117/376632
+Arquitectura software per a la monitorització i control de drons mitjançant una aplicació web |CÁRDENAS MÁRQUEZ, JUAN ANTONIO|  2022| https://upcommons.upc.edu/handle/2117/375394
+
 
