@@ -298,10 +298,10 @@ The API Rest module has been build using the Flask framework. A very simple and 
 ## 13.Compilation of TFG and TFM projects   
 
 
-Title  | Author | Year | URL 
---- | --- | --- | --- 
-Disseny i Implementació del Mode Cursa en el Drone Circus, del Drone Engineering Ecosystem (DEE) | GARCIA MEDIAVILLA, PABLO | 2023| https://upcommons.upc.edu/handle/2117/395234
-Operaciones de enjambre en DEE | SÁNCHEZ ERASO, SERGIO | 2023| https://upcommons.upc.edu/handle/2117/395270
+Title (with link)  | Author | Year 
+--- | --- | --- 
+[Disseny i Implementació del Mode Cursa en el Drone Circus, del Drone Engineering Ecosystem (DEE)](https://upcommons.upc.edu/handle/2117/395234)| GARCIA MEDIAVILLA, PABLO | 2023
+[Operaciones de enjambre en DEE](https://upcommons.upc.edu/handle/2117/395270) | SÁNCHEZ ERASO, SERGIO | 2023
 Drone control and monitoring by means of a web application | SINGH ATWAL, JASKIRAT |  2023| https://upcommons.upc.edu/handle/2117/395271
 From Backend to DashMobile: Expanding the Horizons of the Drone Engineering Ecosystem | PINTO MORENO, ALEJANDRO SAMUEL |  2023| https://upcommons.upc.edu/handle/2117/394931  
 Contribución al Drone Engineering Ecosystem con Android Nativo | NUEZ ZARAGOZA, LAURA |  2023| https://upcommons.upc.edu/handle/2117/393653  
