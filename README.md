@@ -301,7 +301,7 @@ The API Rest module has been build using the Flask framework. A very simple and 
 Title  | Author | Year | URL 
 --- | --- | --- | --- 
 Disseny i Implementació del Mode Cursa en el Drone Circus, del Drone Engineering Ecosystem (DEE) | GARCIA MEDIAVILLA, PABLO | 2023| https://upcommons.upc.edu/handle/2117/395234
-broker.hivemq.com | 8883 | secure websockets| In case of using secure WebAppsSeconds 
-classpip.upc.edu | 8000 |  websockets| Requiere credentials provided by the DEE academic responsible 
-classpip.upc.edu | 8884 |  secure websockets|  In case of using secure WebApps. Requiere credentials provided by the DEE academic responsible 
+Operaciones de enjambre en DEE | SÁNCHEZ ERASO, SERGIO | 2023| https://upcommons.upc.edu/handle/2117/395270
+Drone control and monitoring by means of a web application | SINGH ATWAL, JASKIRAT |  2023| https://upcommons.upc.edu/handle/2117/395271
+From Backend to DashMobile: Expanding the Horizons of the Drone Engineering Ecosystem | PINTO MORENO, ALEJANDRO SAMUEL |  2023| https://upcommons.upc.edu/handle/2117/394931  
 
