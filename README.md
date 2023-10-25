@@ -308,12 +308,12 @@ Title (with link)  | Author | Year
 [Desenvolupament i integració de jocs i aplicacions web al Drone Engineering Ecosystem](https://upcommons.upc.edu/handle/2117/393331) |  ORPELLA PALOMAR, JOANA |  2023
 [Diseño e implementación de una estación de control de drones en Android nativo](https://upcommons.upc.edu/handle/2117/392005)| CASAÑA CABRERIZO, POL |  2023
 [Study of drone synchronization](https://upcommons.upc.edu/handle/2117/383486) | JOHERA IZQUIERDO, JOEL |  2023
-Design, development, and validation of a web-based control application for drones | LE GALL, THÉO EVAN |  2023| https://upcommons.upc.edu/handle/2117/392647  
-Drone-Based Panorama Stitching: A Study of SIFT, FLANN, and RANSAC Techniques | CHANG, YICHENG |  2023| https://upcommons.upc.edu/handle/2117/392245
-Autonomous transmission tower inspection using UAV | COLOMÉ SANZ, FERRAN |  2023| https://upcommons.upc.edu/handle/2117/390947
-Estandardització i posada en marxa de l¿ecosistema anomenat Drone Engineering Ecosystem | AGUILA I PALLEJÀ, GUILLEM |  2023| https://upcommons.upc.edu/handle/2117/385113
-Contribution to the development of a drone engineering station | YILAKEQI |  2022| https://upcommons.upc.edu/handle/2117/376354
-Estudi sobre la viabilitat de diferents tecnologies per un ecosistema de drons | LLOVERAS ORTEGA, GUILLEM |  2022| https://upcommons.upc.edu/handle/2117/376632
-Arquitectura software per a la monitorització i control de drons mitjançant una aplicació web |CÁRDENAS MÁRQUEZ, JUAN ANTONIO|  2022| https://upcommons.upc.edu/handle/2117/375394
+[Design, development, and validation of a web-based control application for drones](https://upcommons.upc.edu/handle/2117/392647) | LE GALL, THÉO EVAN |  2023  
+[Drone-Based Panorama Stitching: A Study of SIFT, FLANN, and RANSAC Techniques](https://upcommons.upc.edu/handle/2117/392245) | CHANG, YICHENG |  2023
+[Autonomous transmission tower inspection using UAV](https://upcommons.upc.edu/handle/2117/390947) | COLOMÉ SANZ, FERRAN |  2023
+[Estandardització i posada en marxa de l¿ecosistema anomenat Drone Engineering Ecosystem]( https://upcommons.upc.edu/handle/2117/385113) | AGUILA I PALLEJÀ, GUILLEM |  2023
+[Contribution to the development of a drone engineering station](https://upcommons.upc.edu/handle/2117/376354) | YILAKEQI |  2022
+[Estudi sobre la viabilitat de diferents tecnologies per un ecosistema de drons](https://upcommons.upc.edu/handle/2117/376632) | LLOVERAS ORTEGA, GUILLEM |  2022
+[Arquitectura software per a la monitorització i control de drons mitjançant una aplicació web](https://upcommons.upc.edu/handle/2117/375394) |CÁRDENAS MÁRQUEZ, JUAN ANTONIO|  2022
 
 
