@@ -74,8 +74,7 @@ When there is no internet coverage, then local mode can be used. In this case, t
 Finally, it is also possible to work in direct mode, which is the only possibility if there is not on-board computer. In direct mode, the autopilot service (am also the external broker) in run as a part of the front-end application and connects directly to the autopilot via the telemetry radio.     
 
 A detailed description of commuinication modes and how to configure the modules in each case can be found here:
-
-[Communication modes](https://www.youtube.com/playlist?list=PLyAtSQhMsD4qeEJ6uV70C_faX7WYyW5_R)
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-communication_modes-pink.svg)](https://www.youtube.com/playlist?list=PLyAtSQhMsD4qeEJ6uV70C_faX7WYyW5_R)
     
 More details on the brokers required to support the communication modes in the Drone Engineering Ecosystem can be found in section 8.
       
@@ -85,9 +84,8 @@ The system can be run in production mode and in simulation mode. The production 
 In simulation mode all modules (including brokers) run on the same computer (for example, a laptop). In this case, Mission Planner is needed, which incorporates a simulator that will be controlled by the Autopilot service exactly as it would be in production mode. Simulation mode is ideal to develop and test the applicacions before moving to production mode.    
 
 Review the videos on communication modes for details on how to configure also the operation mode:    
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-communication_modes-pink.svg)](https://www.youtube.com/playlist?list=PLyAtSQhMsD4qeEJ6uV70C_faX7WYyW5_R)
 
-[Communication modes](https://www.youtube.com/playlist?list=PLyAtSQhMsD4qeEJ6uV70C_faX7WYyW5_R)
-    
 ## 7. Swarm mode
 Some of the front-end applications can work with a swarm of drones. For instance, a swarm of drones can complete in less time the scanning of a certain area.   
 
@@ -215,8 +213,8 @@ The figure shows the sequence of steps involved in an individual contribution.
 ![individualContribution (1)](https://user-images.githubusercontent.com/100842082/215315504-4077ce55-8ab7-41d4-81af-c6f703c14e16.png)     
 
 These two videos show an example.   
-[Demo of contribution (part 1)](https://youtu.be/MWoIC6T-5m4)     
-[Demo of contribution (part 2)](https://youtu.be/jSS6Q2iIurU)
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-contributions(1)-pink.svg)](https://youtu.be/MWoIC6T-5m4) 
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-contributions(2)-pink.svg)](https://youtu.be/jSS6Q2iIurU)
 
 
 In the first video the individual contribution does not have any conflict. In the second video some conflicts arise. In the following every step shown is these videos is described. While watching the videos you must have in mind the figure.    
