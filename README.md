@@ -186,29 +186,15 @@ The problem is easily solved by downloading that dll from here (https://www.dll-
 ```
 D:\Users\usuario\Documents\Mission Planner\sitl
 ```
-
-
-## 9. Starting on-board services
-When operating in production mode, the on-board services must be run in the on-board computer.   
-In this repo you will find a python script (boot.py) that can be used to that purpose. 
-All on-board services and boot.py must be downloaded in the on-board computer and the requirements must be installed. Of course, the mosquitto broker must also be running on-board. 
-The services can be started with this command:
-```
-sudo python3 boot.py parameters
-```
-The boot script will detect if there is internet coverage. If not, the green led will keep fixed and all the services will be started in local and production modes.  
-If there is internet coverage then the user can select the communication model: green led indicates local mode and blue led color indicates global mode. The user can change the mode with the on board-button. If the button is not pressed during 20 seconds the led will keep fixed, the communication mode will be selected and the services will start accordingly.    
-If you are planning to work in global mode you must provide one addicional parameter to the boot.py script. This parameter is the broker that must be used as external broker (either 'broker.hivemq.com' or 'classpip.upc.edu'). In case you choose the second option then you must provide two additional parameters: username and password.
-
-
-## 10. Contributions
+     
+## 9. Contributions
 Students contribute to the development of the Drone Engineering Ecosystem by doing their TFG/TFM. There are three modalities of work: individual, in small group or in a larger group with SCRUM methodology.   
    
 The individual modality is the usual one. The student develops the work individually according to the objectives established with the tutors. In the small group mode, students form groups of 2 or 3, work as a team, organizing the tasks to their liking, although presenting individual reports at the end (which probably have a good part in common). The oral presentation will also be joint. This modality is ideal for working with colleagues with whom there is a good understanding.   
    
 In the SCRUM modality, students are grouped into larger groups (4 or more), even if they have not worked together before (or even know each other). The work is carried out according to the guidelines of the agile SCRUM methodology, advancing by sprints. Finally, each student presents the report that describes their contribution to the group's work. The final presentation can be individual or in small groups of students who have worked more closely in the different sprints.
 
-## 11. Contribution protocol
+## 10. Contribution protocol
 Contributions must follow the protocol described in this section. Two cases are considered: individual contribution and team contribution.    
 
 ### Individual contribution
@@ -276,7 +262,7 @@ This pull request may generate conflicts that must be resolved (maybe with the h
 
 
 
-## 12. Supporting materials   
+## 11. Supporting materials   
      
 Mosquitto installation and configuration:      
 [Installing Mosquitto in Ubuntu](http://codigoelectronica.com/blog/instalar-mosquitto-ubuntu)      
@@ -295,7 +281,7 @@ You can find here more information about public Access brokers.
 The API Rest module has been build using the Flask framework. A very simple and clear example on how to use Flask (in Spanish) can be found here:    
 [Flask](https://youtu.be/Esdj9wlBOaI)
 
-## 13.Compilation of TFG and TFM projects   
+## 12.Compilation of TFG and TFM projects   
 
 
 Title (with link)  | Author | Year 
