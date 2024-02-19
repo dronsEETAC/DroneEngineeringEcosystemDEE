@@ -56,8 +56,7 @@ A detailed guide on how to assemble, configure and tune up the drone platform ca
 [TransversalProjectGuide.pdf](https://github.com/dronsEETAC/DroneEngineeringEcosystemDEE/files/10319359/TransversalProjectGuide.pdf)
 
 ## 4. Demos   
-This is a tutorial with and introduction to the ecosystem organization and an example on how to install and run some of the modules. [![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Introduction tutorial-pink.svg)](https://www.youtube.com/playlist?list=PLyAtSQhMsD4o6s7OSD32KVOksonKDSRJ).    
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Introduction tutorial-pink.svg)](https://www.youtube.com/playlist?list=PLyAtSQhMsD4o6s7OSD32KVOksonKDSRJ) 
+This is a tutorial with and introduction to the ecosystem organization and an example on how to install and run some of the modules.
 [![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Introduction_tutorial-pink.svg)](https://www.youtube.com/playlist?list=PLyAtSQhMsD4o6s7OSD32KVOksonKDSRJ-)     
 
 Go to the repos of the different front-end applications (Drone Circus, Dashboard or Mobile App) for other nice demos.
