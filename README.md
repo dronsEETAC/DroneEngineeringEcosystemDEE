@@ -38,6 +38,10 @@ The modules are organized into blocks, depending on the technologies used for th
 * *Back End*:
 [![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-BackEnd-orange.svg)](https://github.com/dronsEETAC/DEE_BackEnd) Modules that serve as on hearth back end for computation and data storage and retrieval.
 
+Complementary modules are modules that are not integrated into the ecosystem but contain information, demos and code that may be relevant for development in different frameworks.     
+    
+* *Object recognition with neural network*:
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Object_recognition-blue.svg)](https://github.com/dronsEETAC/ObjectRecognitionWithNN) Tutorials and demos on how to use Yolov5 to train a neural network for object recognition and integrate it into the ecosystem
 
 
    
