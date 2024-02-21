@@ -4,7 +4,7 @@
 
 ## 1. General description
   
-The Drone Engineering Ecosystem is a software tool that allows controlling the operation of a drone platform in different ways and using different types of devices and applications. Look at the figure to see the software architecture and the technologies and tools involved.   
+The Drone Engineering Ecosystem is a software tool that allows controlling the operation of a drone platform in different ways and using different types of devices and applications. Look at the figure to see the software architecture and the technologies and tools involved.    
 
 Some of the modules run on board (the red box in the figure). These modules control the different devices of the drone platform (the autopilot, camera, LEDs, servo, etc.). The software onboard is packaged in a Docker container to facilitate installation.   
     
