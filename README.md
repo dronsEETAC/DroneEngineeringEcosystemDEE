@@ -42,8 +42,8 @@ Complementary modules are modules that are not integrated into the ecosystem but
     
 * *Object recognition with neural network*:
 [![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Object_recognition-blue.svg)](https://github.com/dronsEETAC/ObjectRecognitionWithNN) Tutorials and demos on how to use Yolov5 to train a neural network for object recognition and integrate it into the ecosystem
-
-
+* *Flying Indoor*:
+* [![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Flying-Indoor-blue.svg)](https://github.com/dronsEETAC/DashIndoor.git) How to configure the dron to fly indoor with stability and navegability. Includes an dashboar application to control the dron.
    
 ## 2. A case example
 The best way to understand how the Drone Engineering Ecosystem works is through an example.
