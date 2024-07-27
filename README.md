@@ -1,6 +1,6 @@
 # Drone Engineering Ecosystem   
 
-![esquema_v8](https://github.com/user-attachments/assets/4da90841-8955-45b6-83d7-0175950d1ae8)
+![esquema_v9](https://github.com/user-attachments/assets/311ab198-a6a9-4d8a-bc8c-22a97b54d54f)
 
 
 ## 1. General description
