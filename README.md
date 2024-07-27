@@ -47,6 +47,8 @@ Complementary modules are modules that are not integrated into the ecosystem but
 [![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Flying_Indoor-blue.svg)](https://github.com/dronsEETAC/DashIndoor.git) How to configure the dron to fly indoor with stability and navegability. Includes an dashboar application to control the dron.
 * *DronLink library*:
 [![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-DronLink-blue.svg)](https://github.com/dronsEETAC/DronLink.git) Our own library to control the drons aimed at replacing DroneKit.
+* *CameraLink library and webSockets*:
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-CameraLink-blue.svg)](https://github.com/dronsEETAC/CameraLink.git) Our own library to control the camera. Includes material to learn how to communicate videostream via websockets.
    
 ## 2. A case example
 The best way to understand how the Drone Engineering Ecosystem works is through an example.
