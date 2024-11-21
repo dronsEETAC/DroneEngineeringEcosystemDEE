@@ -298,13 +298,12 @@ Title (with link)  | Author | Year
 [Control de un dron mediante la voz](https://upcommons.upc.edu/handle/2117/???)| TAPOUNET DOMENE, MARC| 2024
 [Innovaciones en el DEE: Mejoras en FlutterApp y Desarrollo de Tecnología para Vuelos Interiores](https://upcommons.upc.edu/handle/2117/413233)| MONCHO ROIG, ELOI| 2024
 [Desenvolupament d'un dron de seguiment hibrid per al Drone Engineering Ecosystem](https://upcommons.upc.edu/handle/2117/417766)| CARRASCO CASTRO, CARLES| 2024
+[Reconocimiento de objetos para el control de drones en el Drone Engineering Ecosystem](https://upcommons.upc.edu/handle/2117/414365)| MARCOS PAYA, POL| 2024
 [AeroVox: A Web App Developed for Voice Controlled Drone Operations with 3D Spatial Constraints](https://upcommons.upc.edu/handle/2117/417756)| LÓPEZ AMOR VENDER, MATEO| 2024
 [Contribució al Drone Engineering Ecosystem: Implementació d'un gestor de base de dades](https://upcommons.upc.edu/handle/2117/????)| FERRER FALLOUK, OMAR| 2024
 [MultiDronBoard: una aplicación para la gestión de múltiples drones](https://upcommons.upc.edu/handle/2117/417135)| SANDU LEFCU, TOMI RICCARDO| 2024
 [Contribución al Drone Engineering Ecosystem: implementación de obstáculos](https://upcommons.upc.edu/handle/2117/412419)| ÁLVAREZ FERNÁNDEZ, MIGUEL| 2024
 [Flutter en el Drone Engineering Ecosystem: Desarrollo de tutorial y estudio sobre videostreaming](https://upcommons.upc.edu/handle/2117/403655)| IBRAHIM GUARDIA, RUBEN| 2024
-
-
 [Control de múltiples drones en el Drone Engineering Ecosystem](https://upcommons.upc.edu/handle/2117/403650)| SANMARTÍN ARÉVALO, ADOLFO| 2024
 [Sistema anticolisión cooperativo 3D entre tráficos UAVs](https://upcommons.upc.edu/handle/2117/403395)| GARCÍA FÉLIX, HÉCTOR-ANDRÉS| 2024
 [Reconocimiento de objetos en tiempo real mediante Deep Learning aplicado en Drones](https://upcommons.upc.edu/handle/2117/403398)| ALONSO SUÁREZ, IKER| 2024
