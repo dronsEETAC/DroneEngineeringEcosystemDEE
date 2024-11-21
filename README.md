@@ -295,6 +295,7 @@ The API Rest module has been build using the Flask framework. A very simple and 
 
 Title (with link)  | Author | Year 
 --- | --- | --- 
+[Dockerización de los servicios de a bordo y mejora en la planificación y ejecución de planes de vuelo en el Drone Engineering Ecosystem](https://upcommons.upc.edu/handle/2117/403790)| LLAVERÍA NÚÑEZ, JORDI| 2024
 [Disseny i Implementació del Mode Cursa en el Drone Circus, del Drone Engineering Ecosystem (DEE)](https://upcommons.upc.edu/handle/2117/395234)| GARCIA MEDIAVILLA, PABLO | 2023
 [Operaciones de enjambre en DEE](https://upcommons.upc.edu/handle/2117/395270) | SÁNCHEZ ERASO, SERGIO | 2023
 [Drone control and monitoring by means of a web application](https://upcommons.upc.edu/handle/2117/395271) | SINGH ATWAL, JASKIRAT |  2023
