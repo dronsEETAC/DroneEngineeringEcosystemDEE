@@ -295,6 +295,11 @@ The API Rest module has been build using the Flask framework. A very simple and 
 
 Title (with link)  | Author | Year 
 --- | --- | --- 
+[Control de múltiples drones en el Drone Engineering Ecosystem](https://upcommons.upc.edu/handle/2117/403650)| SANMARTÍN ARÉVALO, ADOLFO| 2024
+[Sistema anticolisión cooperativo 3D entre tráficos UAVs](https://upcommons.upc.edu/handle/2117/403395)| GARCÍA FÉLIX, HÉCTOR-ANDRÉS| 2024
+[Reconocimiento de objetos en tiempo real mediante Deep Learning aplicado en Drones](https://upcommons.upc.edu/handle/2117/403398)| ALONSO SUÁREZ, IKER| 2024
+[DroneLink EETAC: Nuevas librerías para el Drone Engineering Ecosystem](https://upcommons.upc.edu/handle/2117/412545)| CARNEROS MATEU, DANIEL| 2024
+[Contribució al ecosistema dels drons: DroneLab](https://upcommons.upc.edu/handle/2117/395745)| EL OUARIK CHEMLAL, YASSINNE| 2023
 [Dockerización de los servicios de a bordo y mejora en la planificación y ejecución de planes de vuelo en el Drone Engineering Ecosystem](https://upcommons.upc.edu/handle/2117/403790)| LLAVERÍA NÚÑEZ, JORDI| 2024
 [Disseny i Implementació del Mode Cursa en el Drone Circus, del Drone Engineering Ecosystem (DEE)](https://upcommons.upc.edu/handle/2117/395234)| GARCIA MEDIAVILLA, PABLO | 2023
 [Operaciones de enjambre en DEE](https://upcommons.upc.edu/handle/2117/395270) | SÁNCHEZ ERASO, SERGIO | 2023
