@@ -11,7 +11,7 @@ Some of the modules run on board (the red box in the figure). These modules cont
     
 Some others modules are front-end applications that allow the user to control the drone (specifying flight plans, showing the images send by the drone, etc.). There are three types of front-end applications. Desktop applications must be installed in the laptop that is used as ground station. Desktop applications control the drone directly or through the software on board. Some of the application allow to define and execute flight plans, process the video stream from the drone or guide the drone with body poses. Desktop applications are developed in Python of in C#.   
    
-Web app allow controlling the drone from any mobile device (phones or tablets). No installation in the device is required. Only internet connection to access the web server. This is ideal to allow visitors to our Drone Lab interact with the drone using their mobile phones, guiding the drone with a set of buttons or with their voice. Web apps are develped in Flask or in Vue.    
+Web app allow controlling the drone from any mobile device (phones or tablets). No installation in the device is required. Only internet connection to access the web server. This is ideal to allow visitors to our Drone Lab interact with the drone using their mobile phones, guiding the drone with a set of buttons or with their voice. Usually a web app communicates with a Desktop application through a broker or a web sockect, since it is the laptop that is connected to the drone to send it the commands (or receive telemetry info) as required by the web apps. Web apps are develped in Flask or in Vue.    
 
 Native applications are developed specifically for mobile devices so that they can leverage device-specific features and offer optimal performance. Native applications are developed using Android Studio, Java, Kotlin and Flutter.    
     
@@ -60,7 +60,7 @@ Fnnally, the following is a list of complementary modules that can be usefull fo
 * *Phone sensors*:
 [![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Sensors-blue.svg)](https://github.com/dronsEETAC/Sensors.git) How to get information from the mobile phone sensors (giroscope, GPS, accelerometer) using a Flask web app and use this information to control the drone.
 * *Unity*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Unity-blue.svg)](https://github.com/dronsEETAC/Unity.git) How to use Unity in the context of the ecosystem (includes a demo application with some augmented reallity).
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Unity-blue.svg)](https://github.com/dronsEETAC/Unity.git) How to use Unity in the context of the ecosystem (includes a demo application with some augmented reality).
    
 ## 2. A case example
 The best way to understand how the Drone Engineering Ecosystem works is through an example.
