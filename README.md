@@ -56,9 +56,10 @@ Fnnally, the following is a list of complementary modules that can be usefull fo
 * *Joystick*:
 [![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Joystick-blue.svg)](https://github.com/dronsEETAC/Joystick.git) How to control the drone with a joystick (a real one or a virtual one in the form of web app).
 * *csDronLink*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-CameraLink-blue.svg)](https://github.com/dronsEETAC/csDronLink.git) A version of dronLink in C#.
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-csDronLink-blue.svg)](https://github.com/dronsEETAC/csDronLink.git) A version of dronLink in C#.
 * *Phone sensors*:
 [![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-CameraLink-blue.svg)](https://github.com/dronsEETAC/CameraLink.git) How to get information from the mobile phone sensors (giroscope, GPS, accelerometer) using a Flask web app and use this information to control the drone.
+* *Unity*:
 [![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Unity-blue.svg)](https://github.com/dronsEETAC/CameraLink.git) How to use Unity in the context of the ecosystem (includes a demo application with some augmented reallity).
    
 ## 2. A case example
