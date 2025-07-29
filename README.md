@@ -58,9 +58,9 @@ Fnnally, the following is a list of complementary modules that can be usefull fo
 * *csDronLink*:
 [![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-csDronLink-blue.svg)](https://github.com/dronsEETAC/csDronLink.git) A version of dronLink in C#.
 * *Phone sensors*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-CameraLink-blue.svg)](https://github.com/dronsEETAC/CameraLink.git) How to get information from the mobile phone sensors (giroscope, GPS, accelerometer) using a Flask web app and use this information to control the drone.
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Sensors-blue.svg)](https://github.com/dronsEETAC/Sensors.git) How to get information from the mobile phone sensors (giroscope, GPS, accelerometer) using a Flask web app and use this information to control the drone.
 * *Unity*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Unity-blue.svg)](https://github.com/dronsEETAC/CameraLink.git) How to use Unity in the context of the ecosystem (includes a demo application with some augmented reallity).
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Unity-blue.svg)](https://github.com/dronsEETAC/Unity.git) How to use Unity in the context of the ecosystem (includes a demo application with some augmented reallity).
    
 ## 2. A case example
 The best way to understand how the Drone Engineering Ecosystem works is through an example.
