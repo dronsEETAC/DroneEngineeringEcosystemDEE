@@ -5,18 +5,22 @@
 
 ## 1. General description
   
-The Drone Engineering Ecosystem is a software tool that allows controlling the operation of a drone platform in different ways and using different types of devices and applications. Look at the figure to see the software architecture and the technologies and tools involved.    
+The Drone Engineering Ecosystem is a software tool that allows controlling the operation of a drone platform (or several drons simultaneously) in different ways and using different types of devices and applications. Look at the figure to see the software architecture and the technologies and tools involved.    
 
 Some of the modules run on board (the red box in the figure). These modules control the different devices of the drone platform (the autopilot, camera, LEDs, servo, etc.). The software onboard is packaged in a Docker container to facilitate installation.   
     
-Some others modules are front-end applications that allow the user to control the drone (specifying flight plans, showing the images send by the drone, etc.).   There are a variety of frameworks and tools to implement front-end applications, including Python + tkinter (for desktop application, Vue + Ionic (for Webb Apps) and Android Studio, Java, Kotlin or Flutter (for native applications). Some of these front-end applications are able to control a swarm of drones.     
+Some others modules are front-end applications that allow the user to control the drone (specifying flight plans, showing the images send by the drone, etc.). There are three types of front-end applications. Desktop applications must be installed in the laptop that is used as ground station. Desktop applications control the drone directly or through the software on board. Some of the application allow to define and execute flight plans, process the video stream from the drone or guide the drone with body poses. Desktop applications are developed in Python of in C#.   
+   
+Web app allow controlling the drone from any mobile device (phones or tablets). No installation in the device is required. Only internet connection to access the web server. This is ideal to allow visitors to our Drone Lab interact with the drone using their mobile phones, guiding the drone with a set of buttons or with their voice. Web apps are develped in Flask or in Vue.    
+
+Native applications are developed specifically for mobile devices so that they can leverage device-specific features and offer optimal performance. Native applications are developed using Android Studio, Java, Kotlin and Flutter.    
     
 Finally, some modules are the back-end for data storage and recovery.  
 
 In addition to these modules, the ecosystem uses:
 1. An internal broker (Mosquitto) running on-board to facilitate the communication among on-board services.
-2. An external broker (Mosquitto) running in internet to facilitate the communication between front-end and back-end modules and the drone platform.
-3. The Mission Planner, that is used for development purposes, since it provides an autopilot simulator, so that the ecosystem can be developed and tested without requiring a real drone platform. 
+2. An external broker (any public broker or a specific UPC broker) running in internet to facilitate the communication between front-end and back-end modules and the drone platform.
+3. The Mission Planner, that is used for development purposes, since it provides an autopilot simulator (SITL), so that the ecosystem can be developed and tested without requiring a real drone platform. 
 
 The modules are organized into blocks, depending on the technologies used for their development. For each block there is a GitHub repo where the code of the different modules belonging to the block can be found together with information about the technologies used (installation instructions, tutorials, demos, etc.). These are the repos of the different blocks:
 
@@ -25,10 +29,10 @@ The modules are organized into blocks, depending on the technologies used for th
 
 
 * *Desktop applications*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Desktop-orange.svg)](https://github.com/dronsEETAC/DEE_DesktopApplications) Front-end modules developed using Python and Tkinter (or CustomTkinter) as GUI.
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Desktop-orange.svg)](https://github.com/dronsEETAC/DEE_DesktopApplications) Front-end modules developed using Python and Tkinter (or CustomTkinter) or in C# as GUI.
 
 * *WebApps*:
-[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-WebApps-orange.svg)](https://github.com/dronsEETAC/DEE_WebApps) Front-end modules in the form of WebApp, developed using Vue and Ionic.
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-WebApps-orange.svg)](https://github.com/dronsEETAC/DEE_WebApps) Front-end modules in the form of WebApp, developed using Vue and Ionic or Flask.
 
 * *Android Apps*:
 [![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Android-orange.svg)](https://github.com/dronsEETAC/DEE_Android) Front-end modules developed for Android native using Java or Kotlin.
@@ -39,7 +43,7 @@ The modules are organized into blocks, depending on the technologies used for th
 * *Back End*:
 [![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-BackEnd-orange.svg)](https://github.com/dronsEETAC/DEE_BackEnd) Modules that serve as on hearth back end for computation and data storage and retrieval.
 
-Complementary modules are modules that are not integrated into the ecosystem but contain information, demos and code that may be relevant for development in different frameworks.     
+Fnnally, the following is a list of complementary modules that can be usefull for different developments. For each of these complementary modules there is a repo with detailed explanations, examples, codes, and demos.       
     
 * *Object recognition with neural network*:
 [![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Object_recognition-blue.svg)](https://github.com/dronsEETAC/ObjectRecognitionWithNN) Tutorials and demos on how to use Yolov5 to train a neural network for object recognition and integrate it into the ecosystem
