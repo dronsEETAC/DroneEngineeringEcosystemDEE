@@ -307,13 +307,13 @@ The API Rest module has been build using the Flask framework. A very simple and 
 
 Title (with link)  | Author | Year 
 --- | --- | --- 
-[Puesta en marcha de un sistema conversacional con IA para el control de drones mediante voz con cámara integrada](https://upcommons.upc.edu/entities/publication/X)| PASTOR DOMENECH, MARINA| 2025 
+[Puesta en marcha de un sistema conversacional con IA para el control de drones mediante voz con cámara integrada](https://upcommons.upc.edu/entities/publication/f8caa265-173b-4c87-914e-25f4f87d9a43)| PASTOR DOMENECH, MARINA| 2025 
 [Development of a Drone Control Application for Object Detection and Image Stitching](https://repositori.upf.edu/items/c401e4c3-fab2-4e94-a31a-3891cdea12e7)| QUINTILLA CASTELLÓN, BERNAT| 2025
-[Augmented Reality through Unity in the Drone Engineering Ecosystem](https://upcommons.upc.edu/entities/publication/X)| DOMENECH FONS, ARNAU| 2025
-[WebApp en Flask para controlar un dron](https://upcommons.upc.edu/entities/publication/X)| FERNÁNDEZ MERINO, ERIK| 2025
-[Estudi de les possibilitats de la eina Flask pel desenvolupament de web apps per controlar drons](https://upcommons.upc.edu/entities/publication/X)| DEL HIERRO MOSTEIRO, SANTIAGO| 2025
-[Implementació d'un joc de combat de drons amb Flutter, Node.js i Python](https://upcommons.upc.edu/entities/publication/X)| SABATER NUALART, ANNA| 2025
-[DroneQuest PX: Desarrollo de un videojuego multijugador para drones en el Drone Engineering Ecosystem](https://upcommons.upc.edu/entities/publication/X)| SANCHEZ BRIZ, SERGIO| 2025
+[Augmented Reality through Unity in the Drone Engineering Ecosystem](https://upcommons.upc.edu/entities/publication/c3dc0440-afa7-41ec-bb8a-f4edcbcf53c7))| DOMENECH FONS, ARNAU| 2025
+[WebApp en Flask para controlar un dron](https://upcommons.upc.edu/entities/publication/a9c239a9-a777-4c82-921c-93dc5db4fc49)| FERNÁNDEZ MERINO, ERIK| 2025
+[Estudi de les possibilitats de la eina Flask pel desenvolupament de web apps per controlar drons](https://upcommons.upc.edu/entities/publication/c63ea7a4-702f-43d2-ba44-36a74373f89b)| DEL HIERRO MOSTEIRO, SANTIAGO| 2025
+[Implementació d'un joc de combat de drons amb Flutter, Node.js i Python](https://upcommons.upc.edu/entities/publication/f6886f04-bea2-4016-98a6-ec6c998db1bb)| SABATER NUALART, ANNA| 2025
+[DroneQuest PX: Desarrollo de un videojuego multijugador para drones en el Drone Engineering Ecosystem](https://upcommons.upc.edu/entities/publication/9cfec120-f402-4c2f-a759-b0b69d217bdf)| SANCHEZ BRIZ, SERGIO| 2025
 [Desarrollo de un sistema conversacional con IA para el control de drones mediante voz](https://upcommons.upc.edu/entities/publication/156d2867-2b57-4cb6-9476-b885bda6bc76)| SOROYA BAYOD, VICTOR| 2024
 [Control de un dron mediante la voz](https://upcommons.upc.edu/entities/publication/5fb3d265-0f74-454e-9e86-355cb01d1944)| TAPOUNET DOMENE, MARC| 2024
 [Innovaciones en el DEE: Mejoras en FlutterApp y Desarrollo de Tecnología para Vuelos Interiores](https://upcommons.upc.edu/entities/publication/39290a13-4629-4ef9-b04b-d0780c025c2a)| MONCHO ROIG, ELOI| 2024
@@ -345,6 +345,7 @@ Title (with link)  | Author | Year
 [Contribution to the development of a drone engineering station](https://upcommons.upc.edu/handle/2117/376354) | YILAKEQI |  2022
 [Estudi sobre la viabilitat de diferents tecnologies per un ecosistema de drons](https://upcommons.upc.edu/handle/2117/376632) | LLOVERAS ORTEGA, GUILLEM |  2022
 [Arquitectura software per a la monitorització i control de drons mitjançant una aplicació web](https://upcommons.upc.edu/handle/2117/375394) |CÁRDENAS MÁRQUEZ, JUAN ANTONIO|  2022
+
 
 
 
