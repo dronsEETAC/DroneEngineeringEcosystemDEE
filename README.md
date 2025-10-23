@@ -307,8 +307,8 @@ The API Rest module has been build using the Flask framework. A very simple and 
 
 Title (with link)  | Author | Year 
 --- | --- | --- 
-[Puesta en marcha de un sistema conversacional con IA para el control de drones mediante voz con cámara integrada](https://upcommons.upc.edu/entities/publication/X)| PASTOR DOMENECH, MARINA| 2025
-[Development of a Drone Control Application for Object Detection and Image Stitching](https://upcommons.upc.edu/entities/publication/X)| QUINTILLA CASTELLÓN, BERNAT| 2025
+[Puesta en marcha de un sistema conversacional con IA para el control de drones mediante voz con cámara integrada](https://upcommons.upc.edu/entities/publication/X)| PASTOR DOMENECH, MARINA| 2025 
+[Development of a Drone Control Application for Object Detection and Image Stitching](https://repositori.upf.edu/items/c401e4c3-fab2-4e94-a31a-3891cdea12e7)| QUINTILLA CASTELLÓN, BERNAT| 2025
 [Augmented Reality through Unity in the Drone Engineering Ecosystem](https://upcommons.upc.edu/entities/publication/X)| DOMENECH FONS, ARNAU| 2025
 [WebApp en Flask para controlar un dron](https://upcommons.upc.edu/entities/publication/X)| FERNÁNDEZ MERINO, ERIK| 2025
 [Estudi de les possibilitats de la eina Flask pel desenvolupament de web apps per controlar drons](https://upcommons.upc.edu/entities/publication/X)| DEL HIERRO MOSTEIRO, SANTIAGO| 2025
@@ -345,5 +345,6 @@ Title (with link)  | Author | Year
 [Contribution to the development of a drone engineering station](https://upcommons.upc.edu/handle/2117/376354) | YILAKEQI |  2022
 [Estudi sobre la viabilitat de diferents tecnologies per un ecosistema de drons](https://upcommons.upc.edu/handle/2117/376632) | LLOVERAS ORTEGA, GUILLEM |  2022
 [Arquitectura software per a la monitorització i control de drons mitjançant una aplicació web](https://upcommons.upc.edu/handle/2117/375394) |CÁRDENAS MÁRQUEZ, JUAN ANTONIO|  2022
+
 
 
