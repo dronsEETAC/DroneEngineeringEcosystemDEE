@@ -61,6 +61,9 @@ Fnnally, the following is a list of complementary modules that can be usefull fo
 [![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Sensors-blue.svg)](https://github.com/dronsEETAC/Sensors.git) How to get information from the mobile phone sensors (giroscope, GPS, accelerometer) using a Flask web app and use this information to control the drone.
 * *Unity*:
 [![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Unity-blue.svg)](https://github.com/dronsEETAC/Unity.git) How to use Unity in the context of the ecosystem (includes a demo application with some augmented reality).
+* *PID*:
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-PID-blue.svg)](https://github.com/dronsEETAC/PID.git) To undestand and lear to use PID control with drons.
+ 
    
 ## 2. A case example
 The best way to understand how the Drone Engineering Ecosystem works is through an example.
@@ -351,6 +354,7 @@ Title (with link)  | Author | Year
 [Contribution to the development of a drone engineering station](https://upcommons.upc.edu/handle/2117/376354) | YILAKEQI |  2022
 [Estudi sobre la viabilitat de diferents tecnologies per un ecosistema de drons](https://upcommons.upc.edu/handle/2117/376632) | LLOVERAS ORTEGA, GUILLEM |  2022
 [Arquitectura software per a la monitorització i control de drons mitjançant una aplicació web](https://upcommons.upc.edu/handle/2117/375394) |CÁRDENAS MÁRQUEZ, JUAN ANTONIO|  2022
+
 
 
 
