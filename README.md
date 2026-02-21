@@ -1,7 +1,7 @@
 # Drone Engineering Ecosystem   
 
-<img width="1991" height="1094" alt="Image" src="https://github.com/user-attachments/assets/d91ff2e1-0878-46ee-ad8b-3faa3c06ecb6" />
 
+<img width="3706" height="1963" alt="Imagen1" src="https://github.com/user-attachments/assets/5f69e84f-c24c-41da-a34b-7b8a41d904cc" />
 
 ## 1. General description
   
@@ -351,6 +351,7 @@ Title (with link)  | Author | Year
 [Contribution to the development of a drone engineering station](https://upcommons.upc.edu/handle/2117/376354) | YILAKEQI |  2022
 [Estudi sobre la viabilitat de diferents tecnologies per un ecosistema de drons](https://upcommons.upc.edu/handle/2117/376632) | LLOVERAS ORTEGA, GUILLEM |  2022
 [Arquitectura software per a la monitorització i control de drons mitjançant una aplicació web](https://upcommons.upc.edu/handle/2117/375394) |CÁRDENAS MÁRQUEZ, JUAN ANTONIO|  2022
+
 
 
 
