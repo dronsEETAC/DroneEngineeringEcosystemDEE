@@ -307,6 +307,11 @@ The API Rest module has been build using the Flask framework. A very simple and 
 
 Title (with link)  | Author | Year 
 --- | --- | --- 
+[Integración de un sistema de planificación, ejecución y supervisión de vuelos Indoor](https://upcommons.upc.edu/entities/publication/x)| MARTÍN BENÍTEZ, MIGUEL| 2026 
+[Ampliación y mejora de una WebApp para el control de un dron](https://upcommons.upc.edu/entities/publication/x)| 	PIZARRO HURTADO, CESAR | 2026 
+[Sistema de detección, seguimiento y control PID para drones de interior y exterior con modos de juego (1)](https://upcommons.upc.edu/entities/publication/x)| GALLEGO MARTÍNEZ, JOEL| 2026 
+[Sistema de detección, seguimiento y control PID para drones de interior y exterior con modos de juego (2)](https://upcommons.upc.edu/entities/publication/x)| GARCÍA ORTIZ, ORIOL| 2026 
+[Sistema de planificación y ejecución de planes de vuelo indoor para drones](https://upcommons.upc.edu/entities/publication/x)| LEY ALFARO, LUIS ALONSO| 2026 
 [Desarrollo de un sistema para el vuelo seguro de drones en interiores](https://upcommons.upc.edu/entities/publication/7a766323-a698-4aaf-8e65-14b670231612)| VALERO POYO, ORIOL| 2025 
 [Puesta en marcha de un sistema conversacional con IA para el control de drones mediante voz con cámara integrada](https://upcommons.upc.edu/entities/publication/f8caa265-173b-4c87-914e-25f4f87d9a43)| PASTOR DOMENECH, MARINA| 2025 
 [Development of a Drone Control Application for Object Detection and Image Stitching](https://repositori.upf.edu/items/c401e4c3-fab2-4e94-a31a-3891cdea12e7)| QUINTILLA CASTELLÓN, BERNAT| 2025
@@ -346,6 +351,7 @@ Title (with link)  | Author | Year
 [Contribution to the development of a drone engineering station](https://upcommons.upc.edu/handle/2117/376354) | YILAKEQI |  2022
 [Estudi sobre la viabilitat de diferents tecnologies per un ecosistema de drons](https://upcommons.upc.edu/handle/2117/376632) | LLOVERAS ORTEGA, GUILLEM |  2022
 [Arquitectura software per a la monitorització i control de drons mitjançant una aplicació web](https://upcommons.upc.edu/handle/2117/375394) |CÁRDENAS MÁRQUEZ, JUAN ANTONIO|  2022
+
 
 
 
