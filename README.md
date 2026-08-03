@@ -313,13 +313,13 @@ Title (with link)  | Author | Year
 [Diseño e implementación de una aplicación de gestión y coordinación de flotas de drones para reparto autónomo en entorno simulado](https://upcommons.upc.edu/entities/publication/x)| MARTOS CRUZ, ADRIÀ| 2026 
 [Contribución al Drone Engineering Ecosystem mediante un sistema interactivo basado en reconocimiento de imagen y voz](https://upcommons.upc.edu/entities/publication/x)| MATEOS JIMENEZ, BIANCA| 2026 
 [Integració de mecanismes de control i visió artificial en una aplicació C# per al Drone Engineering Ecosystem](https://upcommons.upc.edu/entities/publication/x)| ABASCAL SÁNCHEZ, CARLA| 2026 
-[Desarrollo de realidad aumentada e interacción con escenarios virtuales para el pilotaje de drones en el Drone Engineering Ecosystem](https://upcommons.upc.edu/entities/publication/x)|PANTA MENA, SUSANA REGHINA| 2026 
+[Desarrollo de realidad aumentada e interacción con escenarios virtuales para el pilotaje de drones en el Drone Engineering Ecosystem](https://upcommons.upc.edu/entities/publication/1e0e0493-cd88-44ba-ac18-11e84df76339)|PANTA MENA, SUSANA REGHINA| 2026 
 [Diseño e implementación de un sistema interactivo con dron](https://upcommons.upc.edu/entities/publication/x)| ARAGONÉS RUIZ, RAÚL| 2026 
-[Integración de un sistema de planificación, ejecución y supervisión de vuelos Indoor](https://upcommons.upc.edu/entities/publication/x)| MARTÍN BENÍTEZ, MIGUEL| 2026 
-[Ampliación y mejora de una WebApp para el control de un dron](https://upcommons.upc.edu/entities/publication/x)| 	PIZARRO HURTADO, CESAR | 2026 
-[Sistema de detección, seguimiento y control PID para drones de interior y exterior con modos de juego (1)](https://upcommons.upc.edu/entities/publication/x)| GALLEGO MARTÍNEZ, JOEL| 2026 
-[Sistema de detección, seguimiento y control PID para drones de interior y exterior con modos de juego (2)](https://upcommons.upc.edu/entities/publication/x)| GARCÍA ORTIZ, ORIOL| 2026 
-[Sistema de planificación y ejecución de planes de vuelo indoor para drones](https://upcommons.upc.edu/entities/publication/x)| LEY ALFARO, LUIS ALONSO| 2026 
+[Integración de un sistema de planificación, ejecución y supervisión de vuelos Indoor](https://upcommons.upc.edu/entities/publication/b2a5bbc7-2381-4590-b754-0bb1af09c6b4)| MARTÍN BENÍTEZ, MIGUEL| 2026 
+[Ampliación y mejora de una WebApp para el control de un dron](https://upcommons.upc.edu/entities/publication/7ab23ba2-de3b-48cb-bf5c-1ed4b0b84717)| 	PIZARRO HURTADO, CESAR | 2026 
+[Sistema de detección, seguimiento y control PID para drones de interior y exterior con modos de juego (1)](https://upcommons.upc.edu/entities/publication/301873e3-5f51-4331-b2ea-1e9c1d0619b4)| GALLEGO MARTÍNEZ, JOEL| 2026 
+[Sistema de detección, seguimiento y control PID para drones de interior y exterior con modos de juego (2)](https://upcommons.upc.edu/entities/publication/d1de1f6a-6385-4329-9e32-6a6ec6fd5675)| GARCÍA ORTIZ, ORIOL| 2026 
+[Sistema de planificación y ejecución de planes de vuelo indoor para drones](https://upcommons.upc.edu/entities/publication/ab39103b-7205-49fe-a462-9b8700fe6ba5)| LEY ALFARO, LUIS ALONSO| 2026 
 [Desarrollo de un sistema para el vuelo seguro de drones en interiores](https://upcommons.upc.edu/entities/publication/7a766323-a698-4aaf-8e65-14b670231612)| VALERO POYO, ORIOL| 2025 
 [Puesta en marcha de un sistema conversacional con IA para el control de drones mediante voz con cámara integrada](https://upcommons.upc.edu/entities/publication/f8caa265-173b-4c87-914e-25f4f87d9a43)| PASTOR DOMENECH, MARINA| 2025 
 [Development of a Drone Control Application for Object Detection and Image Stitching](https://repositori.upf.edu/items/c401e4c3-fab2-4e94-a31a-3891cdea12e7)| QUINTILLA CASTELLÓN, BERNAT| 2025
