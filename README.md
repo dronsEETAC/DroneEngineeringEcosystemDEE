@@ -310,6 +310,11 @@ The API Rest module has been build using the Flask framework. A very simple and 
 
 Title (with link)  | Author | Year 
 --- | --- | --- 
+[Diseño e implementación de una aplicación de gestión y coordinación de flotas de drones para reparto autónomo en entorno simulado](https://upcommons.upc.edu/entities/publication/x)| MARTOS CRUZ, ADRIÀ| 2026 
+[Contribución al Drone Engineering Ecosystem mediante un sistema interactivo basado en reconocimiento de imagen y voz](https://upcommons.upc.edu/entities/publication/x)| MATEOS JIMENEZ, BIANCA| 2026 
+[Integració de mecanismes de control i visió artificial en una aplicació C# per al Drone Engineering Ecosystem](https://upcommons.upc.edu/entities/publication/x)| ABASCAL SÁNCHEZ, CARLA| 2026 
+[Desarrollo de realidad aumentada e interacción con escenarios virtuales para el pilotaje de drones en el Drone Engineering Ecosystem](https://upcommons.upc.edu/entities/publication/x)|PANTA MENA, SUSANA REGHINA| 2026 
+[Diseño e implementación de un sistema interactivo con dron](https://upcommons.upc.edu/entities/publication/x)| ARAGONÉS RUIZ, RAÚL| 2026 
 [Integración de un sistema de planificación, ejecución y supervisión de vuelos Indoor](https://upcommons.upc.edu/entities/publication/x)| MARTÍN BENÍTEZ, MIGUEL| 2026 
 [Ampliación y mejora de una WebApp para el control de un dron](https://upcommons.upc.edu/entities/publication/x)| 	PIZARRO HURTADO, CESAR | 2026 
 [Sistema de detección, seguimiento y control PID para drones de interior y exterior con modos de juego (1)](https://upcommons.upc.edu/entities/publication/x)| GALLEGO MARTÍNEZ, JOEL| 2026 
