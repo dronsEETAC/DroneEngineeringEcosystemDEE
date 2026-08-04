@@ -1,6 +1,7 @@
 # Drone Engineering Ecosystem   
 
 <img width="3607" height="1963" alt="Imagen1" src="https://github.com/user-attachments/assets/3d2a3ba8-d216-4ab0-96ae-db4a5c92a942" />
+<img width="1637" height="893" alt="image" src="https://github.com/user-attachments/assets/a8ce055f-a9be-4feb-ba7d-95606628e935" />
 
 
 ## 1. General description
