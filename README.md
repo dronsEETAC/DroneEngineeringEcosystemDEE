@@ -1,6 +1,5 @@
 # Drone Engineering Ecosystem   
 
-<img width="3607" height="1963" alt="Imagen1" src="https://github.com/user-attachments/assets/3d2a3ba8-d216-4ab0-96ae-db4a5c92a942" />
 <img width="1637" height="893" alt="image" src="https://github.com/user-attachments/assets/0c00059e-9108-482d-a967-023a86672b5c" />
 
 
@@ -64,7 +63,13 @@ Fnnally, the following is a list of complementary modules that can be usefull fo
 [![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-Unity-blue.svg)](https://github.com/dronsEETAC/Unity.git) How to use Unity in the context of the ecosystem (includes a demo application with some augmented reality).
 * *PID*:
 [![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-PID-blue.svg)](https://github.com/dronsEETAC/PID.git) To undestand and lear to use PID control with drons.
+
+* *VideoStreaming and WebRTC*:
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-WebRTC-blue.svg)](https://github.com/dronsEETAC/Tutorial_VideoStreaming.git) Explore different mecanisms for videostreaming (including WebRTC) for different scenarios in the ecosystem.
  
+* *GPU and CUDA*:
+[![DroneEngineeringEcosystem Badge](https://img.shields.io/badge/DEE-CUDA-blue.svg)](https://github.com/dronsEETAC/GPU-CUDA.git) How to take profit of GPU using CUDA to accelerale applications in the ecosystem.
+    
    
 ## 2. A case example
 The best way to understand how the Drone Engineering Ecosystem works is through an example.
